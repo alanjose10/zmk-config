@@ -12,6 +12,7 @@ jobs:
         run: echo "build_date=$(date -u +'%Y-%m-%d_%H-%M-%S')" >> $GITHUB_OUTPUT
 
   build:
+    needs: set-env
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3
     with:
       archive_name: zmk-firmware-${{ needs.set-env.outputs.build_date }}
