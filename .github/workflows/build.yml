@@ -3,4 +3,14 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3
+
+    steps:
+  
+    - name: Get current date and time
+      run: echo "BUILD_DATE=$(date -u +'%Y-%m-%dT%H:%M:%SZ')" >> $GITHUB_ENV
+      shell: bash
+
+    - uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3
+      with:
+        archive_name: zmk-firmware-${{ env.BUILD_DATE }}
+
