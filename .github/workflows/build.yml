@@ -2,15 +2,17 @@ name: Build ZMK firmware
 on: [push, pull_request, workflow_dispatch]
 
 jobs:
-  build:
 
+  set-env:
+    runs-on: ubuntu-latest
+    outputs:
+      build_date: ${{ steps.date.outputs.build_date }}
     steps:
-  
-    - name: Get current date and time
-      run: echo "BUILD_DATE=$(date -u +'%Y-%m-%dT%H:%M:%SZ')" >> $GITHUB_ENV
-      shell: bash
+      - id: date
+        run: echo "build_date=$(date -u +'%Y-%m-%d_%H-%M-%S')" >> $GITHUB_OUTPUT
 
-    - uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3
-      with:
-        archive_name: zmk-firmware-${{ env.BUILD_DATE }}
+  build:
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3
+    with:
+      archive_name: zmk-firmware-${{ needs.set-env.outputs.build_date }}
 
