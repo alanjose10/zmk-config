@@ -22,8 +22,6 @@ include:
 
   - board: nice_nano_v2
     shield: kyria_rev3_left
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
     
   - board: nice_nano_v2
     shield: kyria_rev3_right
@@ -35,3 +33,6 @@ include:
 
   - board: nice_nano_v2
     shield: settings_reset
+
+  - board: nice_nano_v2
+    shield: tester_pro_micro
