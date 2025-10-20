@@ -12,16 +12,17 @@
 
 #define COLEMK_L        0
 #define COLEMK_HRM_L    1
-#define SYMBOL_L           2
+#define SYMBOL_L        2
 #define NAV_L           3
 #define SHORTCUTS_L     4
 #define ADJ_L           5
-#define SYSTEM_L           5
+#define SYSTEM_L        6
 
 #define L_TAB &lt SYMBOL_L TAB
 #define L_ESC &lt SHORTCUTS_L ECS
-#define SHFT_SPC &mt LSHIFT SPACE
 #define L_ENT &lt NAV_L ENTER
+
+#define SHFT_SPC &mt LSHIFT SPACE
 #define SHFT_BKSP &mt RSHIFT BSPC
 
 #define HRM_R &hm LCTRL R
