@@ -51,7 +51,7 @@
         system_layer {
             if-layers = <SYMBOL_L NAV_L>;
             then-layer = <SYSTEM_L>;
-        }
+        };
     };
 
     keymap {
