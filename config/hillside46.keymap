@@ -22,11 +22,11 @@
 #define L_ESC &lt SHORTCUTS_L ESC
 #define L_ENT &lt NAV_L ENTER
 
-#define Undo   LC(Z)
-#define Cut    LC(X)
-#define Copy   LC(C)
-#define Paste  LC(V)
-#define Redo   LC(Y)
+#define Undo   LG(Z)
+#define Cut    LG(X)
+#define Copy   LG(C)
+#define Paste  LG(V)
+#define Redo   LG(Y)
 
 / {
     behaviors {
@@ -73,7 +73,7 @@
             /* COLEMAK-DH */
 
             bindings = <
-&none      &kp Q  &kp W  &kp F  &kp P     &kp B                                                     &kp J        &kp L     &kp U      &kp Y    &kp SEMI   &none
+&none      &kp Q  &kp W  &kp F  &kp P     &kp B                                                     &kp J        &kp L     &kp U      &kp Y    &kp SEMI   &studio_unlock
 &kp GRAVE  &kp A  &kp R  &kp S  &kp T     &kp G                                                     &kp M        &kp N     &kp E      &kp I    &kp O      &kp SQT
 &kp LSHIFT &kp Z  &kp X  &kp C  &kp D     &kp V     &kp ENTER                           &kp CAPS    &kp K        &kp H     &kp COMMA  &kp DOT  &kp SLASH  &none
                                 &kp LGUI  L_TAB     &mt LSHIFT SPACE    L_ESC        L_ENT      &mt RSHIFT BSPC   &mo SYMBOL_L &kp DEL
@@ -85,7 +85,7 @@
             display-name = "DEFAULT-HRM";
             /* COLEMAK-HRM-DH */
             bindings = <
-&none      &kp Q  &kp W  &kp F  &kp P     &kp B                                                     &kp J        &kp L     &kp U      &kp Y    &kp SEMI   &none
+&none      &kp Q  &kp W  &kp F  &kp P     &kp B                                                     &kp J        &kp L     &kp U      &kp Y    &kp SEMI   &studio_unlock
 &kp GRAVE  &kp A  HRM_R  HRM_S  HRM_T     &kp G                                                     &kp M        HRM_N     HRM_E      HRM_I    &kp O      &kp SQT
 &kp LSHIFT &kp Z  &kp X  &kp C  &kp D     &kp V     &kp ENTER                           &kp CAPS    &kp K        &kp H     &kp COMMA  &kp DOT  &kp SLASH  &none
                                 &kp LGUI  L_TAB     &mt LSHIFT SPACE    L_ESC        L_ENT      &mt RSHIFT BSPC   &mo SYMBOL_L &kp DEL
@@ -130,9 +130,9 @@
             /* ADJUST */
 
             bindings = <
-&none       &none         &none         &to COLEMK_L  &to COLEMK_HRM_L  &none                                               &none   &kp F11  &kp F12       &kp PRINTSCREEN  &none              &none 
+&none       &none         &none         &none         &tog COLEMK_HRM_L  &none                                              &none   &none    &none         &none            &none              &none 
 &none       &none         &none         &none         &none             &none                                               &none   &none    &none         &none            &none              &none 
-&none       &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHIFT        &none         &none                         &none   &none   &none    &none         &none            &none              &none 
+&none       &none         &none         &none         &none             &none         &none                         &none   &none   &none    &none         &none            &none              &none 
                                                       &trans            &trans        &trans      &trans    &trans  &trans  &trans  &trans
             >;
 
