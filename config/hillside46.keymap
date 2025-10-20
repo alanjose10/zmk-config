@@ -19,7 +19,7 @@
 #define SYSTEM_L        6
 
 #define L_TAB &lt SYMBOL_L TAB
-#define L_ESC &lt SHORTCUTS_L ECS
+#define L_ESC &lt SHORTCUTS_L ESC
 #define L_ENT &lt NAV_L ENTER
 
 #define SHFT_SPC &mt LSHIFT SPACE
