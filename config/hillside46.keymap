@@ -25,6 +25,25 @@
 #define SHFT_SPC &mt LSHIFT SPACE
 #define SHFT_BKSP &mt RSHIFT BSPC
 
+#define Undo   LC(Z)
+#define Cut    LC(X)
+#define Copy   LC(C)
+#define Paste  LC(V)
+#define Redo   LC(Y)
+
+/ {
+    behaviors {
+        hrm: hrm {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
+            tapping-term-ms = <200>; 
+            quick-tap-ms    = <0>;
+            flavor = "balanced";
+        };
+    };
+};
+
 #define HRM_R &hrm LCTRL R
 #define HRM_I &hrm RCTRL I
 
@@ -34,13 +53,7 @@
 #define HRM_T &hrm LGUI T
 #define HRM_N &hrm RGUI N
 
-
-#define Undo   LC(Z)
-#define Cut    LC(X)
-#define Copy   LC(C)
-#define Paste  LC(V)
-#define Redo   LC(Y)
-
+    
 / {
 
     conditional_layers {
@@ -52,17 +65,6 @@
         system_layer {
             if-layers = <SYMBOL_L NAV_L>;
             then-layer = <SYSTEM_L>;
-        };
-    };
-
-    behaviors {
-        hrm: hrm {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            bindings = <&kp>, <&kp>;
-            tapping-term-ms = <200>; 
-            quick-tap-ms    = <0>;
-            flavor = "balanced";
         };
     };
 
