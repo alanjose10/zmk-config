@@ -75,7 +75,7 @@
             bindings = <
 &none      &kp Q  &kp W  &kp F  &kp P     &kp B                                                     &kp J        &kp L     &kp U      &kp Y    &kp SEMI   &studio_unlock
 &kp GRAVE  &kp A  &kp R  &kp S  &kp T     &kp G                                                     &kp M        &kp N     &kp E      &kp I    &kp O      &kp SQT
-&kp LSHIFT &kp Z  &kp X  &kp C  &kp D     &kp V     &kp ENTER                           &kp CAPS    &kp K        &kp H     &kp COMMA  &kp DOT  &kp SLASH  &none
+&kp LSHIFT &kp Z  &kp X  &kp C  &kp D     &kp V     &kp ENTER                           &kp CAPS    &kp K        &kp H     &kp COMMA  &kp DOT  &kp SLASH  &mo SYSTEM_L
                                 &kp LGUI  L_TAB     &mt LSHIFT SPACE    L_ESC        L_ENT      &mt RSHIFT BSPC   &mo SYMBOL_L &kp DEL
             >;
 
