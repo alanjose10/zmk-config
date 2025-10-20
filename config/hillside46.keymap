@@ -25,14 +25,14 @@
 #define SHFT_SPC &mt LSHIFT SPACE
 #define SHFT_BKSP &mt RSHIFT BSPC
 
-#define HRM_R &hm LCTRL R
-#define HRM_I &hm RCTRL I
+#define HRM_R &hrm LCTRL R
+#define HRM_I &hrm RCTRL I
 
-#define HRM_S &hm LALT R
-#define HRM_E &hm RALT I
+#define HRM_S &hrm LALT R
+#define HRM_E &hrm RALT I
 
-#define HRM_T &hm LGUI T
-#define HRM_N &hm RGUI N
+#define HRM_T &hrm LGUI T
+#define HRM_N &hrm RGUI N
 
 
 #define Undo   LC(Z)
@@ -52,6 +52,16 @@
         system_layer {
             if-layers = <SYMBOL_L NAV_L>;
             then-layer = <SYSTEM_L>;
+        };
+    };
+
+    behaviors {
+        hrm: hrm {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HRM";
+            tapping-term-ms = <200>; 
+            quick-tap-ms    = <0>;
+            flavor = "balanced";
         };
     };
 
