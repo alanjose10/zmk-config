@@ -6,7 +6,7 @@
 
 #include <dt-bindings/zmk/matrix_transform.h>
 
-#include "hillside46_layout.dtsi"
+#include "hillside46-layouts.dtsi"
 
 / {
     chosen {
