@@ -44,8 +44,8 @@
 #define HRM_R &hrm LCTRL R
 #define HRM_I &hrm RCTRL I
 
-#define HRM_S &hrm LALT R
-#define HRM_E &hrm RALT I
+#define HRM_S &hrm LALT S
+#define HRM_E &hrm RALT E
 
 #define HRM_T &hrm LGUI T
 #define HRM_N &hrm RGUI N
