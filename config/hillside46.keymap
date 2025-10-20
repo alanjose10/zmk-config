@@ -126,6 +126,7 @@
         shortcuts_layer {
             display-name = "SHORTCUTS";
             /* Shortcuts layer */
+            status = "reserved";
         };
 
         adj_layer {
