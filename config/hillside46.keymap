@@ -22,9 +22,6 @@
 #define L_ESC &lt SHORTCUTS_L ESC
 #define L_ENT &lt NAV_L ENTER
 
-#define SHFT_SPC &mt LSHIFT SPACE
-#define SHFT_BKSP &mt RSHIFT BSPC
-
 #define Undo   LC(Z)
 #define Cut    LC(X)
 #define Copy   LC(C)
@@ -79,7 +76,7 @@
 &none      &kp Q  &kp W  &kp F  &kp P     &kp B                                                     &kp J        &kp L     &kp U      &kp Y    &kp SEMI   &none
 &kp GRAVE  &kp A  &kp R  &kp S  &kp T     &kp G                                                     &kp M        &kp N     &kp E      &kp I    &kp O      &kp SQT
 &kp LSHIFT &kp Z  &kp X  &kp C  &kp D     &kp V     &kp ENTER                           &kp CAPS    &kp K        &kp H     &kp COMMA  &kp DOT  &kp SLASH  &none
-                                &kp LGUI  L_TAB     SHFT_SPC    L_ESC        L_ENT      SHFT_BKSP   &mo SYMBOL_L &kp DEL
+                                &kp LGUI  L_TAB     &mt LSHIFT SPACE    L_ESC        L_ENT      &mt RSHIFT BSPC   &mo SYMBOL_L &kp DEL
             >;
 
         };
