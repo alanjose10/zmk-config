@@ -25,8 +25,8 @@
     quick-tap-ms = <175>;
 };
 
-#define DEF_L        0
-#define DEF_HRM_L    1
+#define DEF_L           0
+#define DEF_HRM_L       1
 #define SYMBOL_L        2
 #define NAV_L           3
 #define SHORTCUTS_L     4
@@ -159,7 +159,7 @@
             /* Adjustments */
 
             bindings = <
-&none       &none         &none         &none         &tog COLEMK_HRM_L  &none                                              &none   &kp C_BRI_DN    &kp C_BRI_UP         &none            &none              &none 
+&none       &none         &none         &none         &tog DEF_HRM_L    &none                                              &none   &kp C_BRI_DN    &kp C_BRI_UP         &none            &none              &none 
 &none       &none         &none         &none         &none             &none                                               &none   &kp C_VOL_DN    &kp C_VOL_UP         &none            &none              &none 
 &none       &none         &none         &none         &none             &none         &none                         &none   &none   &none    &none         &none            &none              &none 
                                                       &trans            &trans        &trans      &trans    &trans  &trans  &trans  &trans
