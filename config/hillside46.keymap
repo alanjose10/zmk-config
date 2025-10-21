@@ -18,9 +18,13 @@
 #define ADJ_L           5
 #define SYSTEM_L        6
 
-#define L_TAB &lt SYMBOL_L TAB
-#define L_ESC &lt SHORTCUTS_L ESC
-#define L_ENT &lt NAV_L ENTER
+#define SYMB_TAB &lt SYMBOL_L TAB
+#define SHORT_ESC &lt SHORTCUTS_L ESC
+#define NAV_ENT &lt NAV_L ENTER
+#define SYMB_CTRL &lt SYMBOL_L RCTRL
+
+#define SHFT_SPACE &mt LSHIFT SPACE
+#define SHFT_BKSP &mt RSHIFT BSPC
 
 #define Undo   LG(Z)
 #define Cut    LG(X)
@@ -35,7 +39,7 @@
             #binding-cells = <2>;
             bindings = <&kp>, <&kp>;
             tapping-term-ms = <200>; 
-            quick-tap-ms    = <0>;
+            quick-tap-ms = <150>;
             flavor = "balanced";
         };
     };
@@ -76,7 +80,7 @@
 &none      &kp Q  &kp W  &kp F  &kp P     &kp B                                                     &kp J        &kp L     &kp U      &kp Y    &kp SEMI   &studio_unlock
 &kp GRAVE  &kp A  &kp R  &kp S  &kp T     &kp G                                                     &kp M        &kp N     &kp E      &kp I    &kp O      &kp SQT
 &kp LSHIFT &kp Z  &kp X  &kp C  &kp D     &kp V     &kp ENTER                           &kp CAPS    &kp K        &kp H     &kp COMMA  &kp DOT  &kp SLASH  &mo SYSTEM_L
-                                &kp LGUI  L_TAB     &mt LSHIFT SPACE    L_ESC        L_ENT      &mt RSHIFT BSPC   &mo SYMBOL_L &kp DEL
+                                &kp LGUI  SYMB_TAB     SHFT_SPACE    SHORT_ESC        NAV_ENT      SHFT_BKSP   SYMB_CTRL &kp DEL
             >;
 
         };
@@ -88,7 +92,7 @@
 &none      &kp Q  &kp W  &kp F  &kp P     &kp B                                                     &kp J        &kp L     &kp U      &kp Y    &kp SEMI   &studio_unlock
 &kp GRAVE  &kp A  HRM_R  HRM_S  HRM_T     &kp G                                                     &kp M        HRM_N     HRM_E      HRM_I    &kp O      &kp SQT
 &kp LSHIFT &kp Z  &kp X  &kp C  &kp D     &kp V     &kp ENTER                           &kp CAPS    &kp K        &kp H     &kp COMMA  &kp DOT  &kp SLASH  &none
-                                &kp LGUI  L_TAB     &mt LSHIFT SPACE    L_ESC        L_ENT      &mt RSHIFT BSPC   &mo SYMBOL_L &kp DEL
+                                &kp LGUI  SYMB_TAB     SHFT_SPACE    SHORT_ESC        NAV_ENT      SHFT_BKSP   SYMB_CTRL &kp DEL
             >;
 
         };
