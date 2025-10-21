@@ -116,12 +116,12 @@
 
         symbol_layer {
             display-name = "SYMBOLS";
-            /* SYMBOLS */
+            /* Symbols and Numbers*/
 
             bindings = <
-&kp INS   &kp EXCL  &kp AT     &kp HASH   &kp DOLLAR  &kp PERCENT                                               &kp CARET   &kp AMPS      &kp ASTRK     &kp LPAR  &kp RPAR  &kp DEL
-&none     &kp BSLH  &kp MINUS  &kp EQUAL  &kp LBKT    &kp RBKT                                                  &kp HOME    &kp RSHFT     &kp RCTRL     &kp LALT  &kp RGUI  &kp END
-&trans    &kp PIPE  &kp UNDER  &kp PLUS   &kp LBRC    &kp RBRC      &none                            &none      &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP  &none     &kp RCTRL
+&none     &kp EXCL  &kp AT     &kp HASH   &kp DOLLAR  &kp PERCENT                                               &none       &kp N7         &kp N8         &kp N9         &none      &none
+&none     &kp BSLH  &kp MINUS  &kp EQUAL  &kp LBKT    &kp RBKT                                                  &none       &hrm RGUI N1   &hrm RALT N2   &hrm RCTRL N3  &kp N0     &none
+&none     &kp PIPE  &kp UNDER  &kp PLUS   &kp LBRC    &kp RBRC      &none                            &none      &none       &kp N4         &kp N5         &kp N6         &none      &none
                                &trans     &trans      &trans     &trans       &trans     &trans      &trans    &trans
             >;
 
@@ -129,7 +129,7 @@
 
         nav_layer {
             display-name = "NAV";
-            /* NAV   */
+            /* Navigation and Mouse   */
 
             bindings = <
 &none       &none       U_WH_R  U_MS_U    U_WH_L   &none                                                &none      U_MS_LCLK    U_MS_RCLK  &none       &none      &none
@@ -142,7 +142,7 @@
 
         shortcuts_layer {
             display-name = "SHORTCUTS";
-            /* Shortcuts layer */
+            /* Shortcuts */
             bindings = <
 &none       Previous      Back          Forward       Next              &none                                               &none   &none    &none         &none            &none              &none 
 &none       &none         &none         Find          &none             &none                                               &none   &none    &none         &none            &none              &none 
@@ -153,7 +153,7 @@
 
         adj_layer {
             display-name = "ADJUST";
-            /* ADJUST */
+            /* Adjustments */
 
             bindings = <
 &none       &none         &none         &none         &tog COLEMK_HRM_L  &none                                              &none   &kp C_BRI_DN    &kp C_BRI_UP         &none            &none              &none 
@@ -167,6 +167,7 @@
         system_layer {
             display-name = "SYSTEM";
             /* Bluetooth and System layer */
+            
             bindings = <
 &studio_unlock  &none         &none         &none         &none         &none                                                       &none   &out OUT_USB  &out OUT_BLE  &none            &ext_power EP_OFF  &ext_power EP_ON
 &sys_reset      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                                &none   &none         &none         &none            &none              &sys_reset
