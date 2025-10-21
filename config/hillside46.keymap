@@ -35,10 +35,10 @@
 #define Paste  &kp LG(V)
 #define Find   &kp LG(F)
 
-#define Forward  &kp LG(RBKT) // Command-[
-#define Back     &kp LG(LBKT) // Command-]
-#define Next     &kp LS(LG(RBKT)) // Command-Shift-[
-#define Previous &kp LS(LG(LBKT)) // Command-Shift-]
+#define Forward  &kp LG(RBKT)
+#define Back     &kp LG(LBKT)
+#define Next     &kp LS(LG(RBKT))
+#define Previous &kp LS(LG(LBKT))
 
 / {
     behaviors {
@@ -112,7 +112,7 @@
             bindings = <
 &kp INS   &kp EXCL  &kp AT     &kp HASH   &kp DOLLAR  &kp PERCENT                                               &kp CARET   &kp AMPS      &kp ASTRK     &kp LPAR  &kp RPAR  &kp DEL
 &none     &kp BSLH  &kp MINUS  &kp EQUAL  &kp LBKT    &kp RBKT                                                  &kp HOME    &kp RSHFT     &kp RCTRL     &kp LALT  &kp RGUI  &kp END
-&trans    &kp PIPE  &kp UNDER  &kp PLUS   &kp LBRC    &kp RBRC   &sk RALT                            &kp K_APP  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP  &none     &kp RCTRL
+&trans    &kp PIPE  &kp UNDER  &kp PLUS   &kp LBRC    &kp RBRC      &none                            &none      &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP  &none     &kp RCTRL
                                &trans     &trans      &trans     &trans       &trans     &trans      &trans    &trans
             >;
 
