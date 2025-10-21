@@ -12,6 +12,15 @@
 
 #include "mouse.dtsi"
 
+&mt {
+    tapping-term-ms = <200>;
+    quick-tap-ms = <150>;
+};
+
+&lt {
+    tapping-term-ms = <200>;
+    quick-tap-ms = <150>;
+};
 
 #define COLEMK_L        0
 #define COLEMK_HRM_L    1
