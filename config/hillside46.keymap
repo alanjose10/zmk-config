@@ -9,6 +9,8 @@
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
+
 
 #define COLEMK_L        0
 #define COLEMK_HRM_L    1
@@ -26,11 +28,11 @@
 #define SHFT_SPACE &mt LSHIFT SPACE
 #define SHFT_BKSP &mt RSHIFT BSPC
 
-#define Undo   LG(Z)
-#define Cut    LG(X)
-#define Copy   LG(C)
-#define Paste  LG(V)
-#define Redo   LG(Y)
+#define Undo   &kp LG(Z)
+#define Cut    &kp LG(X)
+#define Copy   &kp LG(C)
+#define Paste  &kp LG(V)
+#define Find   &kp LG(F)
 
 / {
     behaviors {
@@ -115,10 +117,10 @@
             /* NAV   */
 
             bindings = <
-&kp Copy  &kp N1    &kp N2    &kp N3     &kp N4     &kp N5                                              &kp N6     &kp N7    &kp N8  &kp N9    &kp N0     &trans
-&kp Cut   &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &kp Paste                                           &kp PG_UP  &kp LEFT  &kp UP  &kp DOWN  &kp RIGHT  &kp PG_DN
-&trans    &kp F1    &kp F2    &kp F3     &kp F4     &kp F5     &kp Undo                       &kp Redo  &kp F6     &kp F7    &kp F8  &kp F9    &kp F10    &kp RCTRL
-                                &trans    &trans    &trans      &trans       &trans     &trans      &trans    &trans
+&none       &none       &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT   &none                                                &none      &mkp LCLK    &mkp RCLK   &none      &none      &none
+&none       &none       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT   &none                                                &kp LEFT   &kp DOWN     &kp UP     &kp RIGHT   &none      &none
+&none       &none       &msc SCRL_DOWN  &none           &msc SCRL_UP      &none      &none                       &none         &none      &none        &none      &none       &none      &none
+                                                                &trans    &trans    &trans      &trans       &trans     &trans      &trans    &trans
             >;
 
         };
@@ -126,7 +128,12 @@
         shortcuts_layer {
             display-name = "SHORTCUTS";
             /* Shortcuts layer */
-            status = "reserved";
+            bindings = <
+&none       &none         &none         &none         &none             &none                                               &none   &none    &none         &none            &none              &none 
+&none       &none         &none         Find          &none             &none                                               &none   &none    &none         &none            &none              &none 
+&none       Undo          Cut           Copy          Paste             &none         &none                         &none   &none   &none    &none         &none            &none              &none 
+                                                      &trans            &trans        &trans      &trans    &trans  &trans  &trans  &trans
+            >;
         };
 
         adj_layer {
