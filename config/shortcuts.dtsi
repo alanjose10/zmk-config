@@ -1,0 +1,10 @@
+#define Undo   &kp LG(Z)
+#define Cut    &kp LG(X)
+#define Copy   &kp LG(C)
+#define Paste  &kp LG(V)
+#define Find   &kp LG(F)
+
+#define Forward  &kp LG(RBKT)
+#define Back     &kp LG(LBKT)
+#define Next     &kp LS(LG(RBKT))
+#define Previous &kp LS(LG(LBKT))

@@ -13,6 +13,8 @@
 #include "zmk-helpers/helper.h"
 #include "zmk-helpers/key-labels/hillside46.h"
 
+#include "hillside-common.dtsi"
+
 #include "mouse.dtsi"
 
 &mt {
@@ -41,40 +43,12 @@
 #define SHFT_SPACE &mt LSHIFT SPACE
 #define SHFT_BKSP &mt RSHIFT BSPC
 
-#define Undo   &kp LG(Z)
-#define Cut    &kp LG(X)
-#define Copy   &kp LG(C)
-#define Paste  &kp LG(V)
-#define Find   &kp LG(F)
+/* Shortcuts */
+#include "shortcuts.dtsi"
 
-#define Forward  &kp LG(RBKT)
-#define Back     &kp LG(LBKT)
-#define Next     &kp LS(LG(RBKT))
-#define Previous &kp LS(LG(LBKT))
+/* Home row mods and other hold tap behaviours */
+#include "hillside-ht.dtsi"
 
-/ {
-    behaviors {
-        hrm: hrm {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            bindings = <&kp>, <&kp>;
-            tapping-term-ms = <200>; 
-            quick-tap-ms = <150>;
-            flavor = "balanced";
-        };
-    };
-};
-
-#define HRM_R &hrm LCTRL R
-#define HRM_I &hrm RCTRL I
-
-#define HRM_S &hrm LALT S
-#define HRM_E &hrm RALT E
-
-#define HRM_T &hrm LGUI T
-#define HRM_N &hrm RGUI N
-
-    
 / {
 
     conditional_layers {
@@ -97,7 +71,7 @@
             /* COLEMAK-HRM-DH */
             bindings = <
 &none      &kp Q  &kp W  &kp F  &kp P     &kp B                                                     &kp J        &kp L     &kp U      &kp Y    &kp SEMI   &studio_unlock
-&kp GRAVE  &kp A  HRM_R  HRM_S  HRM_T     &kp G                                                     &kp M        HRM_N     HRM_E      HRM_I    &kp O      &kp SQT
+&kp GRAVE  &kp A  &hm_l LCTRL R  &hm_l LALT S  &hm_l LGUI T     &kp G                                                     &kp M        &hm_r RGUI N     &hm_r RALT E      &hm_r RCTRL I    &kp O      &kp SQT
 &kp LSHIFT &kp Z  &kp X  &kp C  &kp D     &kp V     &kp ENTER                           &kp CAPS    &kp K        &kp H     &kp COMMA  &kp DOT  &kp SLASH  &kp RALT
                                 &kp LGUI  SYMB_TAB     SHFT_SPACE    SHORT_ESC        NAV_ENT      SHFT_BKSP     SYMB_DEL &kp RCTRL
             >;
@@ -123,7 +97,7 @@
 
             bindings = <
 &none     &kp EXCL  &kp AT     &kp HASH   &kp DOLLAR  &kp PERCENT                                               &none       &kp N7         &kp N8         &kp N9         &none      &none
-&none     &kp BSLH  &kp MINUS  &kp EQUAL  &kp LBKT    &kp RBKT                                                  &none       &hrm RGUI N1   &hrm RALT N2   &hrm RCTRL N3  &kp N0     &none
+&none     &kp BSLH  &hm_l RGUI MINUS  &hm_l RALT EQUAL  &hm_l RCTRL LBKT    &kp RBKT                                                  &none       &hm_r RGUI N1   &hm_r RALT N2   &hm_r RCTRL N3  &kp N0     &none
 &none     &kp PIPE  &kp UNDER  &kp PLUS   &kp LBRC    &kp RBRC      &none                            &none      &none       &kp N4         &kp N5         &kp N6         &none      &none
                                &trans     &trans      &trans     &trans       &trans     &trans      &trans    &trans
             >;
@@ -180,6 +154,5 @@
         };
     };
 };
-
 
 #include "hillside-combos.dtsi"
