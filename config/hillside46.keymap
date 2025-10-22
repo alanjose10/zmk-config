@@ -35,7 +35,7 @@
             flavor = "hold-preferred";
             tapping-term-ms = <250>;
             quick-tap-ms = <200>;
-            bindings = <THUMBS>;;
+            bindings = <THUMBS>;
             display-name = "Thumb-Mod-Tap";
         };
     };
