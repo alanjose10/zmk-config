@@ -40,8 +40,8 @@ ZMK_COMBO(ch_rpar,  &kp RPAR, LB1 LB2, DEF_L DEF_HRM_L, COMBO_TERM_FAST, COMBO_I
 // Chord RT1 RT2 for " and '
 ZMK_COMBO(ch_quotes,  &mph_quotes, RT1 RT2, DEF_L DEF_HRM_L, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
-// Chord RB0 RB1 for [ and {
-ZMK_COMBO(ch_grave_tilde,  &mph_lbkt_lbrc, RB0 RB1, DEF_L DEF_HRM_L, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+// Chord RB1 RB2 for [ and {
+ZMK_COMBO(ch_lbkt_lbrc,  &mph_lbkt_lbrc, RB1 RB2, DEF_L DEF_HRM_L, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
 // Chord RB2 RB3 for ] and }
-ZMK_COMBO(ch_grave_tilde,  &mph_rbkt_rbrc, RB2 RB3, DEF_L DEF_HRM_L, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(ch_rbkt_rbrc,  &mph_rbkt_rbrc, RB2 RB3, DEF_L DEF_HRM_L, COMBO_TERM_FAST, COMBO_IDLE_FAST)
