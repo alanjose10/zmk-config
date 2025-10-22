@@ -9,9 +9,14 @@
   ZMK_MOD_MORPH(NAME, mods = <(MOD_L##MOD | MOD_R##MOD)>;                      \
                 bindings = <BINDING1>, <BINDING2>;)
 
-// Tap: left/right parenthesis | Shft + tap: less-than/greater-than.
-SIMPLE_MORPH(lpar_lt, SFT, &kp LPAR, &kp LT)
-SIMPLE_MORPH(rpar_gt, SFT, &kp RPAR, &kp GT)
+// Tap: ' | Shft + tap: "
+SIMPLE_MORPH(mph_quotes, SFT, &kp SQT, &kp DQT)
 
-ZMK_COMBO(lpar,  &lpar_lt, RM1 RM2, DEF_L DEF_HRM_L SYMBOL_L, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-ZMK_COMBO(rpar,  &rpar_gt, RM2 RM3, DEF_L DEF_HRM_L SYMBOL_L, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+// Tap: ` | Shft + tap: ~
+SIMPLE_MORPH(mph_grave_tilde, SFT, &kp GRAVE, &kp TILDE)
+
+// Chord RT1 RT2 for " and '
+ZMK_COMBO(ch_quotes,  &mph_quotes, RT1 RT2, DEF_L DEF_HRM_L, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+
+// Chord LT1 LT2 for ` and ~
+ZMK_COMBO(ch_grave_tilde,  &mph_grave_tilde, LT1 LT2, DEF_L DEF_HRM_L, COMBO_TERM_FAST, COMBO_IDLE_FAST)
