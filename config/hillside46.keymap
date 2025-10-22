@@ -70,12 +70,16 @@
             display-name = "DEFAULT-HRM";
             /* COLEMAK-HRM-DH */
             bindings = <
-&none      &kp Q  &kp W  &kp F  &kp P     &kp B                                                     &kp J        &kp L     &kp U      &kp Y    &kp SEMI   &studio_unlock
-&kp GRAVE  &kp A  &hm_l LCTRL R  &hm_l LALT S  &hm_l LGUI T     &kp G                                                     &kp M        &hm_r RGUI N     &hm_r RALT E      &hm_r RCTRL I    &kp O      &kp SQT
-&kp LSHIFT &kp Z  &kp X  &kp C  &kp D     &kp V     &kp ENTER                           &kp CAPS    &kp K        &kp H     &kp COMMA  &kp DOT  &kp SLASH  &kp RALT
-                                &kp LGUI  SYMB_TAB     SHFT_SPACE    SHORT_ESC        NAV_ENT      SHFT_BKSP     SYMB_DEL &kp RCTRL
+// ╭────────────────────────┬────────────────────────┬────────────────────────┬────────────────────────┬────────────────────────┬────────────────────────╮                                                                                                         ╭────────────────────────┬────────────────────────┬────────────────────────┬───────────────────────┬────────────────────────┬────────────────────────╮
+    &none                    &kp Q                    &kp W                    &kp F                    &kp P                    &kp B                                                                                                                              &kp J                    &kp L                    &kp U                    &kp Y                   &kp SEMI                 &none
+// ├────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┤                                                                                                         ├────────────────────────┼────────────────────────┼────────────────────────┼───────────────────────┼────────────────────────┼────────────────────────┤
+    &kp GRAVE                &kp A                    &hml LCTRL R             &hml LALT S              &hml LGUI T              &kp G                                                                                                                              &kp M                    &hmr RGUI N              &hmr RALT E              &hmr RCTRL I            &kp O                    &kp SQT
+// ├────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┬────────────────────────╮                                                       ╭────────────────────────┬────────────────────────┼────────────────────────┼────────────────────────┼───────────────────────┼────────────────────────┼────────────────────────┤
+    &kp LSHIFT               &kp Z                    &kp X                    &kp C                    &kp D                    &kp V                    &kp ENTER                                                                        &kp CAPS                 &kp K                    &kp H                    &kp COMMA               &kp DOT                  &kp SLASH                &kp RALT
+// ├────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┬────────────────────────┬────────────────────────╮     ╭────────────────────────┬────────────────────────┼────────────────────────┼────────────────────────┼───────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┤
+                                                                                                        &kp LGUI                 SYMB_TAB                 SHFT_SPACE               SHORT_ESC                      NAV_ENT                  SHFT_BKSP                SYMB_DEL                 &kp RCTRL
+//                                                                                                     ╰────────────────────────┴────────────────────────┴────────────────────────┴────────────────────────╯     ╰────────────────────────┴────────────────────────┴────────────────────────┴────────────────────────╯
             >;
-
         };
 
         default_layer {
@@ -97,7 +101,7 @@
 
             bindings = <
 &none     &kp EXCL  &kp AT     &kp HASH   &kp DOLLAR  &kp PERCENT                                               &none       &kp N7         &kp N8         &kp N9         &none      &none
-&none     &kp BSLH  &hm_l RGUI MINUS  &hm_l RALT EQUAL  &hm_l RCTRL LBKT    &kp RBKT                                                  &none       &hm_r RGUI N1   &hm_r RALT N2   &hm_r RCTRL N3  &kp N0     &none
+&none     &kp BSLH  &hml RGUI MINUS  &hml RALT EQUAL  &hml RCTRL LBKT    &kp RBKT                                                  &none       &hmr RGUI N1   &hmr RALT N2   &hmr RCTRL N3  &kp N0     &none
 &none     &kp PIPE  &kp UNDER  &kp PLUS   &kp LBRC    &kp RBRC      &none                            &none      &none       &kp N4         &kp N5         &kp N6         &none      &none
                                &trans     &trans      &trans     &trans       &trans     &trans      &trans    &trans
             >;
