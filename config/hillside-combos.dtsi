@@ -15,8 +15,33 @@ SIMPLE_MORPH(mph_quotes, SFT, &kp SQT, &kp DQT)
 // Tap: ` | Shft + tap: ~
 SIMPLE_MORPH(mph_grave_tilde, SFT, &kp GRAVE, &kp TILDE)
 
-// Chord RT1 RT2 for " and '
-ZMK_COMBO(ch_quotes,  &mph_quotes, RT1 RT2, DEF_L DEF_HRM_L, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+// Tap: [ | Shift + tap: {
+SIMPLE_MORPH(mph_lbkt_lbrc, SFT, &kp LBKT, &kp LBRC)
+
+// Tap: ] | Shift + tap: }
+SIMPLE_MORPH(mph_rbkt_rbrc, SFT, &kp RBKT, &kp RBRC)
+
+// CHORDS
+
+// Left Side
 
 // Chord LT1 LT2 for ` and ~
 ZMK_COMBO(ch_grave_tilde,  &mph_grave_tilde, LT1 LT2, DEF_L DEF_HRM_L, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+
+// Chord LB2 LB3 for (
+ZMK_COMBO(ch_lpar,  &kp LPAR, LB2 LB3, DEF_L DEF_HRM_L, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+
+// Chord LB1 LB2 for )
+ZMK_COMBO(ch_rpar,  &kp RPAR, LB1 LB2, DEF_L DEF_HRM_L, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+
+
+// Right Side
+
+// Chord RT1 RT2 for " and '
+ZMK_COMBO(ch_quotes,  &mph_quotes, RT1 RT2, DEF_L DEF_HRM_L, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+
+// Chord RB0 RB1 for [ and {
+ZMK_COMBO(ch_grave_tilde,  &mph_lbkt_lbrc, RB0 RB1, DEF_L DEF_HRM_L, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+
+// Chord RB2 RB3 for ] and }
+ZMK_COMBO(ch_grave_tilde,  &mph_rbkt_rbrc, RB2 RB3, DEF_L DEF_HRM_L, COMBO_TERM_FAST, COMBO_IDLE_FAST)
