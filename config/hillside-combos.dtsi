@@ -32,5 +32,14 @@ Import the following before importing this:
 #define COMBO_IDLE_FAST 150
 #define COMBO_IDLE_SLOW 50
 
+// Define mod-morph with a *single* mod trigger for less repetition.
+#define SIMPLE_MORPH(NAME, MOD, BINDING1, BINDING2)                            \
+  ZMK_MOD_MORPH(NAME, mods = <(MOD_L##MOD | MOD_R##MOD)>;                      \
+                bindings = <BINDING1>, <BINDING2>;)
+
+// Tap: left/right parenthesis | Shft + tap: less-than/greater-than.
+SIMPLE_MORPH(lpar_lt, SFT, &kp LPAR, &kp LT)
+SIMPLE_MORPH(rpar_gt, SFT, &kp RPAR, &kp GT)
+
 ZMK_COMBO(lpar,  &lpar_lt, RM1 RM2, DEF_L DEF_HRM_L SYMBOL_L, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(rpar,  &rpar_gt, RM2 RM3, DEF_L DEF_HRM_L SYMBOL_L, COMBO_TERM_FAST, COMBO_IDLE_FAST)
