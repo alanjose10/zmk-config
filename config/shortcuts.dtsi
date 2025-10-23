@@ -8,3 +8,71 @@
 #define Back     &kp LG(LBKT)
 #define Next     &kp LS(LG(RBKT))
 #define Previous &kp LS(LG(LBKT))
+
+#define DesktopLeft &kp LC(LEFT_ARROW)
+#define DesktopRight &kp LC(RIGHT_ARROW)
+
+
+/ {
+    macros {
+        open_chrome: open_chrome {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI>
+                , <&macro_tap &kp SPACE>
+                , <&macro_release &kp LGUI>
+                , <&macro_tap &kp C>, <&macro_tap &kp H>, <&macro_tap &kp R>, <&macro_tap &kp O>, <&macro_tap &kp M>, <&macro_tap &kp E>
+                , <&macro_tap &kp RET>
+                ;
+        };
+    };
+};
+
+/ {
+    macros {
+        open_code: open_code {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI>
+                , <&macro_tap &kp SPACE>
+                , <&macro_release &kp LGUI>
+                , <&macro_tap &kp C>, <&macro_tap &kp O>, <&macro_tap &kp D>, <&macro_tap &kp E>
+                , <&macro_tap &kp RET>
+                ;
+        };
+    };
+};
+
+/ {
+    macros {
+        open_iterm: open_iterm {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI>
+                , <&macro_tap &kp SPACE>
+                , <&macro_release &kp LGUI>
+                , <&macro_tap &kp I>, <&macro_tap &kp T>, <&macro_tap &kp E>, <&macro_tap &kp R>, <&macro_tap &kp M>
+                , <&macro_tap &kp RET>
+                ;
+        };
+    };
+};
+
+/ {
+    macros {
+        open_slack: open_slack {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI>
+                , <&macro_tap &kp SPACE>
+                , <&macro_release &kp LGUI>
+                , <&macro_tap &kp I>, <&macro_tap &kp S>, <&macro_tap &kp L>, <&macro_tap &kp A>, <&macro_tap &kp C>, <&macro_tap &kp K>
+                , <&macro_tap &kp RET>
+                ;
+        };
+    };
+};
