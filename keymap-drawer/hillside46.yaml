@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: hillside46}
 layers:
   DEFAULT-HRM:
-  - ''
+  - '&open_slack'
   - Q
   - W
   - F
@@ -12,8 +12,8 @@ layers:
   - U
   - Y
   - ;
-  - ''
-  - ''
+  - '&open_chrome'
+  - '&open_iterm'
   - A
   - {t: R, h: LCTRL}
   - {t: S, h: LALT}
@@ -24,7 +24,7 @@ layers:
   - {t: E, h: RALT}
   - {t: I, h: RCTRL}
   - O
-  - ''
+  - '&open_code'
   - LSHIFT
   - Z
   - X
@@ -148,10 +148,10 @@ layers:
   - '&mmv MOVE_UP'
   - '&msc SCRL_LEFT'
   - ''
-  - ''
+  - Ctl+LEFT ARROW
   - '&mkp LCLK'
   - '&mkp RCLK'
-  - ''
+  - Ctl+RIGHT ARROW
   - ''
   - ''
   - ''
