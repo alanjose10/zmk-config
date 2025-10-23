@@ -292,9 +292,9 @@ layers:
   - ''
   - OUT USB
   - OUT BLE
-  - ''
   - EP OFF
   - EP ON
+  - ''
   - '&sys_reset'
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
