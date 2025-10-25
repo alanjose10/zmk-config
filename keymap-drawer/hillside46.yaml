@@ -13,7 +13,7 @@ layers:
   - Y
   - ;
   - ''
-  - ''
+  - LSHIFT
   - A
   - {t: R, h: LCTRL}
   - {t: S, h: LALT}
@@ -24,8 +24,8 @@ layers:
   - {t: E, h: RALT}
   - {t: I, h: RCTRL}
   - O
+  - RSHIFT
   - ''
-  - LSHIFT
   - Z
   - X
   - C
@@ -39,14 +39,14 @@ layers:
   - .
   - /
   - ''
-  - LGUI
-  - {t: TAB, h: SYMBOLS}
+  - ''
+  - {t: SPACE, h: SYMBOLS}
   - {t: SPACE, h: LSHIFT}
   - {t: ESC, h: SHORTCUTS}
   - {t: ENTER, h: NAV}
   - {t: BSPC, h: RSHIFT}
-  - {t: DEL, h: SYMBOLS}
-  - RCTRL
+  - {t: TAB, h: SYMBOLS}
+  - DEL
   DEFAULT:
   - ''
   - Q
@@ -59,8 +59,8 @@ layers:
   - U
   - Y
   - ;
-  - ''
-  - ''
+  - RALT
+  - LSHIFT
   - A
   - R
   - S
@@ -71,8 +71,8 @@ layers:
   - E
   - I
   - O
-  - RALT
-  - LSHIFT
+  - RSHIFT
+  - LGUI
   - Z
   - X
   - C
@@ -85,21 +85,16 @@ layers:
   - ','
   - .
   - /
-  - RSHIFT
-  - LGUI
-  - {t: TAB, h: SYMBOLS}
+  - RCTRL
+  - ''
+  - {t: SPACE, h: SYMBOLS}
   - {t: SPACE, h: LSHIFT}
   - {t: ESC, h: SHORTCUTS}
   - {t: ENTER, h: NAV}
   - {t: BSPC, h: RSHIFT}
-  - {t: DEL, h: SYMBOLS}
-  - RCTRL
+  - {t: TAB, h: SYMBOLS}
+  - DEL
   SYMBOLS:
-  - ''
-  - '@'
-  - '%'
-  - '['
-  - ']'
   - ''
   - ''
   - '7'
@@ -107,24 +102,22 @@ layers:
   - '9'
   - ''
   - ''
+  - '['
+  - ']'
+  - '@'
+  - '%'
   - ''
-  - ^
-  - {t: '|', h: RCTRL}
-  - {t: (, h: RALT}
-  - {t: ), h: RGUI}
   - ''
-  - ''
+  - '0'
   - {t: '1', h: RGUI}
   - {t: '2', h: RALT}
   - {t: '3', h: RCTRL}
-  - '0'
   - ''
   - ''
-  - $
-  - '#'
-  - '{'
-  - '}'
-  - ''
+  - {t: '{', h: RGUI}
+  - {t: '}', h: RALT}
+  - {t: '|', h: RCTRL}
+  - ^
   - ''
   - ''
   - ''
@@ -132,6 +125,13 @@ layers:
   - '5'
   - '6'
   - ''
+  - ''
+  - ''
+  - ''
+  - (
+  - )
+  - $
+  - '#'
   - ''
   - {t: ▽, type: trans}
   - {type: held}
