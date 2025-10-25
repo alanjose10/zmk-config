@@ -109,9 +109,9 @@ layers:
   - ''
   - ''
   - '0'
-  - {t: '1', h: RGUI}
+  - {t: '1', h: RCTRL}
   - {t: '2', h: RALT}
-  - {t: '3', h: RCTRL}
+  - {t: '3', h: RGUI}
   - ''
   - ''
   - {t: '{', h: RGUI}
