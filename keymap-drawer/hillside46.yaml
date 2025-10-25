@@ -14,7 +14,7 @@ layers:
   - ;
   - ''
   - ''
-  - {t: A, h: LSHIFT}
+  - A
   - {t: R, h: LCTRL}
   - {t: S, h: LALT}
   - {t: T, h: LGUI}
@@ -23,7 +23,7 @@ layers:
   - {t: N, h: RGUI}
   - {t: E, h: RALT}
   - {t: I, h: RCTRL}
-  - {t: O, h: LSHIFT}
+  - O
   - ''
   - LSHIFT
   - Z
@@ -38,7 +38,7 @@ layers:
   - ','
   - .
   - /
-  - RALT
+  - ''
   - LGUI
   - {t: TAB, h: SYMBOLS}
   - {t: SPACE, h: LSHIFT}
@@ -71,7 +71,7 @@ layers:
   - E
   - I
   - O
-  - ''
+  - RALT
   - LSHIFT
   - Z
   - X
