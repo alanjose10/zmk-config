@@ -14,7 +14,7 @@ layers:
   - ;
   - ''
   - ''
-  - A
+  - {t: A, h: LSHIFT}
   - {t: R, h: LCTRL}
   - {t: S, h: LALT}
   - {t: T, h: LGUI}
@@ -23,7 +23,7 @@ layers:
   - {t: N, h: RGUI}
   - {t: E, h: RALT}
   - {t: I, h: RCTRL}
-  - O
+  - {t: O, h: LSHIFT}
   - ''
   - LSHIFT
   - Z
@@ -85,7 +85,7 @@ layers:
   - ','
   - .
   - /
-  - SYSTEM
+  - RSHIFT
   - LGUI
   - {t: TAB, h: SYMBOLS}
   - {t: SPACE, h: LSHIFT}
@@ -203,7 +203,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - Gui+S
   - ''
   - Gui+F
   - ''
@@ -320,12 +320,12 @@ layers:
   - ''
   - ''
   - ''
-  - {t: '&bootloader', type: held}
+  - '&bootloader'
+  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
