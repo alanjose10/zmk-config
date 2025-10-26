@@ -20,12 +20,12 @@ Shft + tap: ~
 SIMPLE_MORPH(mph_grave_tilde, SFT, &kp GRAVE, &kp TILDE)
 ZMK_COMBO(ch_grave_tilde,  &mph_grave_tilde, LT2 LT1, DEF_L DEF_HRM_L, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
-/* Chord for + / - -> LM1 LM0
-Tap: + 
-Shft + tap: -
+/* Chord for - / + -> LM1 LM0
+Tap: - 
+Shft + tap: +
 */
-SIMPLE_MORPH(mph_plus_minus, SFT, &kp PLUS, &kp MINUS)
-ZMK_COMBO(ch_plus_minus,  &mph_plus_minus, LM1 LM0, DEF_L DEF_HRM_L, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+SIMPLE_MORPH(mph_minus_plus, SFT, &kp MINUS, &kp PLUS)
+ZMK_COMBO(ch_minus_plus,  &mph_minus_plus, LM1 LM0, DEF_L DEF_HRM_L, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
 /* Chord for = / ! -> LB2 LB1
 Tap: = 
