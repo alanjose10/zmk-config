@@ -334,7 +334,7 @@ combos:
   k: {t: '`', s: '~'}
   l: [DEFAULT, DEFAULT-HRM]
 - p: [16, 17]
-  k: {t: +, s: '-'}
+  k: {t: '-', s: +}
   l: [DEFAULT, DEFAULT-HRM]
 - p: [27, 28]
   k: {t: '=', s: '!'}
