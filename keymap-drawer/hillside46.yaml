@@ -40,13 +40,13 @@ layers:
   - /
   - ''
   - ''
-  - {t: SPACE, h: SYMBOLS}
+  - {t: TAB, h: SYMBOLS}
   - {t: SPACE, h: LSHIFT}
   - {t: ESC, h: SHORTCUTS}
   - {t: ENTER, h: NAV}
   - {t: BSPC, h: RSHIFT}
-  - {t: TAB, h: SYMBOLS}
-  - DEL
+  - {t: DEL, h: SYMBOLS}
+  - ''
   DEFAULT:
   - ''
   - Q
@@ -87,13 +87,13 @@ layers:
   - /
   - RCTRL
   - ''
-  - {t: SPACE, h: SYMBOLS}
+  - {t: TAB, h: SYMBOLS}
   - {t: SPACE, h: LSHIFT}
   - {t: ESC, h: SHORTCUTS}
   - {t: ENTER, h: NAV}
   - {t: BSPC, h: RSHIFT}
-  - {t: TAB, h: SYMBOLS}
-  - DEL
+  - {t: DEL, h: SYMBOLS}
+  - ''
   SYMBOLS:
   - ''
   - ''
