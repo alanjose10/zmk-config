@@ -240,7 +240,7 @@ layers:
   - ''
   - ''
   - ''
-  - {t: DEFAULT-HRM, h: toggle}
+  - {t: DEFAULT, h: toggle}
   - ''
   - ''
   - BRI DN

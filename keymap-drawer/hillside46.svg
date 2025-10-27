@@ -1150,10 +1150,9 @@ path.combo {
 </g>
 <g transform="translate(252, 42)" class="key keypos-4">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em">DEFAULT</tspan><tspan x="0" dy="1.2em">-HRM</tspan>
-</text>
-<text x="0" y="24" class="key hold">toggle</text>
+<a href="#DEFAULT">
+<text x="0" y="0" class="key tap layer-activator">DEFAULT</text>
+</a><text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(308, 49)" class="key keypos-5">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
