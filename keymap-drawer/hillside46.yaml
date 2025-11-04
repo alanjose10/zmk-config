@@ -339,14 +339,23 @@ combos:
 - p: [27, 28]
   k: {t: '=', s: '!'}
   l: [DEFAULT, DEFAULT-HRM]
-- p: [7, 8]
-  k: {t: '''', s: '"'}
+- p: [7, 19]
+  k: ''''
   l: [DEFAULT, DEFAULT-HRM]
-- p: [18, 19]
-  k: {t: '*', s: '&'}
+- p: [8, 20]
+  k: '"'
   l: [DEFAULT, DEFAULT-HRM]
-- p: [33, 34]
-  k: {t: _, s: \}
+- p: [19, 33]
+  k: _
+  l: [DEFAULT, DEFAULT-HRM]
+- p: [20, 34]
+  k: \
+  l: [DEFAULT, DEFAULT-HRM]
+- p: [9, 21]
+  k: '*'
+  l: [DEFAULT, DEFAULT-HRM]
+- p: [21, 35]
+  k: '&'
   l: [DEFAULT, DEFAULT-HRM]
 - p: [30, 31]
   k: '&studio_unlock'
