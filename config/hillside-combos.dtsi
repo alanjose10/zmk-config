@@ -44,7 +44,6 @@ ZMK_COMBO(ch_sqt, &kp SQT, RT1 RM1, DEF_L DEF_HRM_L, COMBO_TERM_FAST, COMBO_IDLE
 // Chord for "
 ZMK_COMBO(ch_dqt, &kp DQT, RT2 RM2, DEF_L DEF_HRM_L, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
-
 // Chord for _
 ZMK_COMBO(ch_under, &kp UNDER, RM1 RB1, DEF_L DEF_HRM_L, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
@@ -61,3 +60,6 @@ ZMK_COMBO(ch_amps, &kp AMPS, RM3 RB3, DEF_L DEF_HRM_L, COMBO_TERM_FAST, COMBO_ID
 
 // Unlock ZMK Studio
 ZMK_COMBO(ch_studio_unlock,  &studio_unlock, LH4 RH4, DEF_L DEF_HRM_L, COMBO_TERM_SLOW)
+
+// Toggle home row mods
+ZMK_COMBO(ch_toggle_hrm, &tog DEF_L, LH3 RH3, DEF_L DEF_HRM_L, COMBO_TERM_SLOW)
