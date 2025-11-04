@@ -360,3 +360,6 @@ combos:
 - p: [30, 31]
   k: '&studio_unlock'
   l: [DEFAULT, DEFAULT-HRM]
+- p: [38, 45]
+  k: {t: DEFAULT, h: toggle}
+  l: [DEFAULT, DEFAULT-HRM]
