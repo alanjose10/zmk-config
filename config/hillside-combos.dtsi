@@ -38,26 +38,24 @@ ZMK_COMBO(ch_eq_excl,  &mph_eq_excl, LB2 LB1, DEF_L DEF_HRM_L, COMBO_TERM_FAST, 
 
 // RIGHT SIDE
 
-/* Chord for " / ' -> RT1 RT2
-Tap: ' 
-Shft + tap: "
-*/
-SIMPLE_MORPH(mph_quotes, SFT, &kp SQT, &kp DQT)
-ZMK_COMBO(ch_quotes,  &mph_quotes, RT1 RT2, DEF_L DEF_HRM_L, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+// Chord for '
+ZMK_COMBO(ch_sqt, &kp SQT, RT1 RM1, DEF_L DEF_HRM_L, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
-/* Chord for * / & -> RM0 RM1
-Tap: * 
-Shft + tap: &
-*/
-SIMPLE_MORPH(mph_ast_amp, SFT, &kp ASTRK, &kp AMPS)
-ZMK_COMBO(ch_ast_amp,  &mph_ast_amp, RM0 RM1, DEF_L DEF_HRM_L, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+// Chord for "
+ZMK_COMBO(ch_dqt, &kp DQT, RT2 RM2, DEF_L DEF_HRM_L, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
-/* Chord for _ / \ -> RB1 RB2
-Tap: _ 
-Shft + tap: \
-*/
-SIMPLE_MORPH(mph_und_bslh, SFT, &kp UNDER, &kp BSLH)
-ZMK_COMBO(ch_mph_und_bslh,  &mph_und_bslh, RB1 RB2, DEF_L DEF_HRM_L, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+
+// Chord for _
+ZMK_COMBO(ch_under, &kp UNDER, RM1 RB1, DEF_L DEF_HRM_L, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+
+// Chord for \
+ZMK_COMBO(ch_blsh, &kp BSLH, RM2 RB2, DEF_L DEF_HRM_L, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+
+// Chord for *
+ZMK_COMBO(ch_astrk, &kp ASTRK, RT3 RM3, DEF_L DEF_HRM_L, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+
+// Chord for &
+ZMK_COMBO(ch_amps, &kp AMPS, RM3 RB3, DEF_L DEF_HRM_L, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
 // BOTH SIDES
 
