@@ -12,3 +12,6 @@
 
 #define DesktopLeft &kp LC(LEFT_ARROW)
 #define DesktopRight &kp LC(RIGHT_ARROW)
+
+#define ExpandCode &kp LG(+)
+#define CollapesCode &kp LG(-)
