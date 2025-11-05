@@ -39,7 +39,7 @@ layers:
   - .
   - /
   - ''
-  - ''
+  - BSPC
   - {t: TAB, h: SYMBOLS}
   - {t: SPACE, h: LSHIFT}
   - {t: ESC, h: SHORTCUTS}
@@ -86,7 +86,7 @@ layers:
   - .
   - /
   - RCTRL
-  - ''
+  - BSPC
   - {t: TAB, h: SYMBOLS}
   - {t: SPACE, h: LSHIFT}
   - {t: ESC, h: SHORTCUTS}
