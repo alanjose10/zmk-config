@@ -115,7 +115,7 @@ layers:
   - ''
   - ''
   - {t: '1', h: RGUI}
-  - '&hmr N2'
+  - {t: '2', h: RALT}
   - {t: '3', h: RCTRL}
   - '0'
   - ''
