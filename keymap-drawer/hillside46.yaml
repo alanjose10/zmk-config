@@ -194,7 +194,7 @@ layers:
   - Gui+[
   - Gui+]
   - Sft+Gui+]
-  - Gui++
+  - ''
   - ''
   - ''
   - ''
@@ -206,7 +206,7 @@ layers:
   - Gui+S
   - ''
   - Gui+F
-  - Gui+-
+  - ''
   - ''
   - ''
   - ''
