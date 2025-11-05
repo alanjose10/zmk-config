@@ -342,10 +342,10 @@ combos:
 - p: [15, 27]
   k: '!'
   l: [DEFAULT, DEFAULT-HRM]
-- p: [2, 14]
+- p: [14, 26]
   k: '`'
   l: [DEFAULT, DEFAULT-HRM]
-- p: [14, 26]
+- p: [2, 14]
   k: '~'
   l: [DEFAULT, DEFAULT-HRM]
 - p: [7, 19]
