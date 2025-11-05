@@ -360,6 +360,9 @@ combos:
 - p: [20, 34]
   k: \
   l: [DEFAULT, DEFAULT-HRM]
+- p: [18, 19]
+  k: \
+  l: [DEFAULT, DEFAULT-HRM]
 - p: [9, 21]
   k: '*'
   l: [DEFAULT, DEFAULT-HRM]
