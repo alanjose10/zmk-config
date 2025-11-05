@@ -361,7 +361,7 @@ combos:
   k: \
   l: [DEFAULT, DEFAULT-HRM]
 - p: [18, 19]
-  k: \
+  k: '@'
   l: [DEFAULT, DEFAULT-HRM]
 - p: [9, 21]
   k: '*'
