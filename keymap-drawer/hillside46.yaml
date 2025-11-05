@@ -240,7 +240,7 @@ layers:
   - ''
   - ''
   - ''
-  - {t: DEFAULT, h: toggle}
+  - ''
   - ''
   - ''
   - BRI DN
@@ -330,14 +330,23 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [3, 4]
-  k: {t: '`', s: '~'}
+- p: [4, 16]
+  k: '-'
   l: [DEFAULT, DEFAULT-HRM]
-- p: [16, 17]
-  k: {t: '-', s: +}
+- p: [3, 15]
+  k: +
   l: [DEFAULT, DEFAULT-HRM]
-- p: [27, 28]
-  k: {t: '=', s: '!'}
+- p: [16, 28]
+  k: '='
+  l: [DEFAULT, DEFAULT-HRM]
+- p: [15, 27]
+  k: '!'
+  l: [DEFAULT, DEFAULT-HRM]
+- p: [2, 14]
+  k: '`'
+  l: [DEFAULT, DEFAULT-HRM]
+- p: [14, 26]
+  k: '~'
   l: [DEFAULT, DEFAULT-HRM]
 - p: [7, 19]
   k: ''''
