@@ -1,4 +1,5 @@
 #define Undo   &kp LG(Z)
+#deflne Redo   &kp LG(LS(Z))
 #define Cut    &kp LG(X)
 #define Copy   &kp LG(C)
 #define Paste  &kp LG(V)
