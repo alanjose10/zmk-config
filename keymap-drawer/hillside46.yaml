@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: hillside46}
 layers:
   DEFAULT-HRM:
-  - ''
+  - '&key_repeat'
   - Q
   - W
   - F
@@ -48,7 +48,7 @@ layers:
   - {t: DEL, h: SYMBOLS}
   - ''
   DEFAULT:
-  - ''
+  - '&key_repeat'
   - Q
   - W
   - F
