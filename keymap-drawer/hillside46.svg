@@ -385,6 +385,14 @@ path.combo {
 <text x="476" y="210" class="combo tap layer-activator">DEFAULT</text>
 </a><text x="476" y="221" class="combo hold">toggle</text>
 </g>
+<g class="combo combopos-14">
+<path d="M476,126 l-429,-54" class="combo"/>
+<path d="M476,126 l429,-54" class="combo"/>
+<path d="M476,126 l-429,54" class="combo"/>
+<path d="M476,126 l429,54" class="combo"/>
+<rect rx="6" ry="6" x="462" y="113" width="28" height="26" class="combo"/>
+<text x="476" y="126" class="combo tap"><tspan style="font-size: 64%">&amp;bootloader</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 374)" class="layer-DEFAULT">
@@ -644,6 +652,14 @@ path.combo {
 <a href="#DEFAULT">
 <text x="476" y="210" class="combo tap layer-activator">DEFAULT</text>
 </a><text x="476" y="221" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-14">
+<path d="M476,126 l-429,-54" class="combo"/>
+<path d="M476,126 l429,-54" class="combo"/>
+<path d="M476,126 l-429,54" class="combo"/>
+<path d="M476,126 l429,54" class="combo"/>
+<rect rx="6" ry="6" x="462" y="113" width="28" height="26" class="combo"/>
+<text x="476" y="126" class="combo tap"><tspan style="font-size: 64%">&amp;bootloader</tspan></text>
 </g>
 </g>
 </g>
