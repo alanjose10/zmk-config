@@ -386,10 +386,8 @@ path.combo {
 </a><text x="476" y="221" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-14">
-<path d="M476,126 l-429,-54" class="combo"/>
-<path d="M476,126 l429,-54" class="combo"/>
-<path d="M476,126 l-429,54" class="combo"/>
-<path d="M476,126 l429,54" class="combo"/>
+<path d="M476,126 l-429,0" class="combo"/>
+<path d="M476,126 l429,0" class="combo"/>
 <rect rx="6" ry="6" x="462" y="113" width="28" height="26" class="combo"/>
 <text x="476" y="126" class="combo tap"><tspan style="font-size: 64%">&amp;bootloader</tspan></text>
 </g>
@@ -654,10 +652,8 @@ path.combo {
 </a><text x="476" y="221" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-14">
-<path d="M476,126 l-429,-54" class="combo"/>
-<path d="M476,126 l429,-54" class="combo"/>
-<path d="M476,126 l-429,54" class="combo"/>
-<path d="M476,126 l429,54" class="combo"/>
+<path d="M476,126 l-429,0" class="combo"/>
+<path d="M476,126 l429,0" class="combo"/>
 <rect rx="6" ry="6" x="462" y="113" width="28" height="26" class="combo"/>
 <text x="476" y="126" class="combo tap"><tspan style="font-size: 64%">&amp;bootloader</tspan></text>
 </g>

@@ -372,6 +372,6 @@ combos:
 - p: [38, 45]
   k: {t: DEFAULT, h: toggle}
   l: [DEFAULT, DEFAULT-HRM]
-- p: [0, 11, 24, 37]
+- p: [12, 23]
   k: '&bootloader'
   l: [DEFAULT, DEFAULT-HRM]
