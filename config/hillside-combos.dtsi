@@ -61,4 +61,4 @@ ZMK_COMBO(ch_studio_unlock,  &studio_unlock, LH4 RH4, DEF_L DEF_HRM_L, COMBO_TER
 ZMK_COMBO(ch_toggle_hrm, &tog DEF_L, LH3 RH3, DEF_L DEF_HRM_L, COMBO_TERM_SLOW)
 
 // Dongle bootloader 
-ZMK_COMBO(ch_dongle_bootloader, &bootloader, LT5 RT5, DEF_L DEF_HRM_L, COMBO_TERM_SLOW)
+ZMK_COMBO(ch_dongle_bootloader, &bootloader, LM5 RM5, DEF_L DEF_HRM_L, COMBO_TERM_SLOW)
