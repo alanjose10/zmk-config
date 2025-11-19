@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: hillside46}
 layers:
-  DEFAULT-HRM:
+  DEF-HM:
   - '&key_repeat'
   - Q
   - W
@@ -47,7 +47,7 @@ layers:
   - {t: BSPC, h: RSHIFT}
   - {t: DEL, h: SYMBOLS}
   - ''
-  DEFAULT:
+  DEF:
   - '&key_repeat'
   - Q
   - W
@@ -332,46 +332,46 @@ layers:
 combos:
 - p: [4, 16]
   k: '-'
-  l: [DEFAULT, DEFAULT-HRM]
+  l: [DEF, DEF-HM]
 - p: [3, 15]
   k: +
-  l: [DEFAULT, DEFAULT-HRM]
+  l: [DEF, DEF-HM]
 - p: [16, 28]
   k: '='
-  l: [DEFAULT, DEFAULT-HRM]
+  l: [DEF, DEF-HM]
 - p: [15, 27]
   k: '!'
-  l: [DEFAULT, DEFAULT-HRM]
+  l: [DEF, DEF-HM]
 - p: [14, 26]
   k: '`'
-  l: [DEFAULT, DEFAULT-HRM]
+  l: [DEF, DEF-HM]
 - p: [2, 14]
   k: '~'
-  l: [DEFAULT, DEFAULT-HRM]
+  l: [DEF, DEF-HM]
 - p: [7, 19]
   k: ''''
-  l: [DEFAULT, DEFAULT-HRM]
+  l: [DEF, DEF-HM]
 - p: [8, 20]
   k: '"'
-  l: [DEFAULT, DEFAULT-HRM]
+  l: [DEF, DEF-HM]
 - p: [19, 33]
   k: _
-  l: [DEFAULT, DEFAULT-HRM]
+  l: [DEF, DEF-HM]
 - p: [20, 34]
   k: '%'
-  l: [DEFAULT, DEFAULT-HRM]
+  l: [DEF, DEF-HM]
 - p: [9, 21]
   k: '*'
-  l: [DEFAULT, DEFAULT-HRM]
+  l: [DEF, DEF-HM]
 - p: [21, 35]
   k: '&'
-  l: [DEFAULT, DEFAULT-HRM]
+  l: [DEF, DEF-HM]
 - p: [30, 31]
   k: '&studio_unlock'
-  l: [DEFAULT, DEFAULT-HRM]
+  l: [DEF, DEF-HM]
 - p: [38, 45]
-  k: {t: DEFAULT, h: toggle}
-  l: [DEFAULT, DEFAULT-HRM]
+  k: {t: DEF, h: toggle}
+  l: [DEF, DEF-HM]
 - p: [12, 23]
   k: '&bootloader'
-  l: [DEFAULT, DEFAULT-HRM]
+  l: [DEF, DEF-HM]
