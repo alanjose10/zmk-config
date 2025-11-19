@@ -62,7 +62,7 @@ ZMK_CONDITIONAL_LAYER(system_layer, SYMBOL_L NAV_L, SYSTEM_L)
         compatible = "zmk,keymap";
 
         default_hrm_layer {
-            display-name = "DEFAULT-HRM";
+            display-name = "DEF-HM";
             /* COLEMAK-DH with home row mods */
             
             bindings = <
@@ -79,7 +79,7 @@ ZMK_CONDITIONAL_LAYER(system_layer, SYMBOL_L NAV_L, SYSTEM_L)
         };
 
         default_layer {
-            display-name = "DEFAULT";
+            display-name = "DEF";
             /* COLEMAK-DH */
 
             bindings = <
