@@ -1,0 +1,7 @@
+
+# Space + fmt
+ZMK_BEHAVIOR(nvim_fmt, macro,
+    wait-ms = <100>;
+    tap-ms = <5>;
+    bindings = <&kp Space &kp F &kp M &kp T>;
+)
