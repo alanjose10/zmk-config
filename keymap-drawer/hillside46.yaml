@@ -15,9 +15,9 @@ layers:
   - ''
   - LSHIFT
   - A
-  - {t: R, h: LCTRL}
-  - {t: S, h: LALT}
-  - {t: T, h: LGUI}
+  - '&hml LCTRL R'
+  - '&hml LALT S'
+  - '&hml LGUI T'
   - G
   - M
   - {t: N, h: RGUI}
