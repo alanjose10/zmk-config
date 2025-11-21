@@ -27,6 +27,7 @@
 #define SYSTEM_L        6
 
 #include "shortcuts.dtsi"
+#include "macros.dtsi"
 #include "hillside-ht.dtsi"
 
 ZMK_CONDITIONAL_LAYER(adjust_layer, SHORTCUTS_L NAV_L, ADJ_L)
