@@ -15,9 +15,9 @@ layers:
   - ''
   - LSHIFT
   - A
-  - '&hml LCTRL R'
-  - '&hml LALT S'
-  - '&hml LGUI T'
+  - {t: R, h: LCTRL}
+  - {t: S, h: LALT}
+  - {t: T, h: LGUI}
   - G
   - M
   - {t: N, h: RGUI}
@@ -199,7 +199,7 @@ layers:
   - ''
   - ''
   - ''
-  - '&nvim_fmt'
+  - '&space_fmt'
   - ''
   - ''
   - Ctl+A
