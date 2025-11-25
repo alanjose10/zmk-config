@@ -23,12 +23,15 @@ include:
     shield: hillside46_left
     # cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
   
-  - board: seeeduino_xiao_ble
-    shield: hillside46_dongle dongle_screen
+  # - board: seeeduino_xiao_ble
+  #   shield: hillside46_dongle dongle_screen
 
-  - board: nrf52840_mdk_usb_dongle
+  - board: seeeduino_xiao_ble
     shield: hillside46_dongle
-    cmake-args: -DCONFIG_BUILD_OUTPUT_UF2=y
+
+  # - board: nrf52840_mdk_usb_dongle
+  #   shield: hillside46_dongle
+  #   cmake-args: -DCONFIG_BUILD_OUTPUT_UF2=y
 
 
   # - board: nice_nano_v2
