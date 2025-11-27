@@ -4,7 +4,7 @@
     
     behaviors {
         // Sends "g" then "t" -> Vim: go to next tab
-        vi_gt: vi_gt {
+        vi_tab_next: vi_tab_next {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
@@ -16,7 +16,7 @@
         };
 
         // Sends "g" then "Shift+t" -> Vim: go to previous tab
-        vi_gT: vi_gT {
+        vi_tab_prev: vi_tab_prev {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
