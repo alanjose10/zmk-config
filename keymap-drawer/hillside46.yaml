@@ -195,11 +195,11 @@ layers:
   - Gui+]
   - Sft+Gui+]
   - ''
+  - '&vi_gt'
+  - Ctl+O
+  - Ctl+I
+  - '&vi_gT'
   - ''
-  - ''
-  - ''
-  - ''
-  - '&space_fmt'
   - ''
   - ''
   - Ctl+A
