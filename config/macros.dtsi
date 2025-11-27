@@ -4,10 +4,11 @@
     
     behaviors {
         // Sends "g" then "t" -> Vim: go to next tab
-        gt_cmd: gt_cmd {
+        vi_gt: vi_gt {
             compatible = "zmk,behavior-macro";
-            label = "GT_CMD";
             #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
             bindings = <
                 &kp G
                 &kp T
@@ -15,10 +16,11 @@
         };
 
         // Sends "g" then "Shift+t" -> Vim: go to previous tab
-        gT_cmd: gT_cmd {
+        vi_gT: vi_gT {
             compatible = "zmk,behavior-macro";
-            label = "Gt_CMD";
             #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
             bindings = <
                 &kp G
                 &kp LS(T)
