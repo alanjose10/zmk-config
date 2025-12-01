@@ -108,8 +108,8 @@ layers:
   - ''
   - ''
   - ''
-  - $
-  - {t: \, h: RCTRL}
+  - ^
+  - {t: $, h: RCTRL}
   - {t: '{', h: RALT}
   - {t: '}', h: RGUI}
   - ''
@@ -120,7 +120,7 @@ layers:
   - '0'
   - ''
   - ''
-  - ^
+  - \
   - '#'
   - (
   - )
@@ -195,11 +195,11 @@ layers:
   - Gui+]
   - Sft+Gui+]
   - ''
+  - '&vi_tab_prev'
+  - Ctl+O
+  - Ctl+I
+  - '&vi_tab_next'
   - ''
-  - ''
-  - ''
-  - ''
-  - '&space_fmt'
   - ''
   - ''
   - Ctl+A

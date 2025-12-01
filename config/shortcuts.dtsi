@@ -14,3 +14,9 @@
 #define DesktopRight &kp LC(RIGHT_ARROW)
 
 #define TmuxLeader &kp LC(A)
+
+// Vi shortcuts
+// Go back 
+#define Vi_C_o &kp LC(O)
+// Go forward
+#define Vi_C_i &kp LC(I)
