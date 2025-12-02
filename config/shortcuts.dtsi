@@ -4,6 +4,7 @@
 #define Paste  &kp LG(V)
 #define Find   &kp LG(F)
 #define Save   &kp LG(S)
+#define SelectAll &kb LG(A)
 
 #define Forward  &kp LG(RBKT)
 #define Back     &kp LG(LBKT)
