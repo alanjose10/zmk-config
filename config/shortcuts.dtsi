@@ -1,20 +1,20 @@
-#define Undo   &kp LG(Z)
-#define Cut    &kp LG(X)
-#define Copy   &kp LG(C)
-#define Paste  &kp LG(V)
-#define Find   &kp LG(F)
-#define Save   &kp LG(S)
-#define SelectAll &kb LG(A)
+#define Undo      &kp LG(Z)
+#define Cut       &kp LG(X)
+#define Copy      &kp LG(C)
+#define Paste     &kp LG(V)
+#define Find      &kp LG(F)
+#define Save      &kp LG(S)
+#define SelectAll &kp LG(A)
 
-#define Forward  &kp LG(RBKT)
-#define Back     &kp LG(LBKT)
-#define Next     &kp LS(LG(RBKT))
-#define Previous &kp LS(LG(LBKT))
+#define Forward   &kp LG(RBKT)
+#define Back      &kp LG(LBKT)
+#define Next      &kp LS(LG(RBKT))
+#define Previous  &kp LS(LG(LBKT))
 
-#define DesktopLeft &kp LC(LEFT_ARROW)
-#define DesktopRight &kp LC(RIGHT_ARROW)
+#define DesktopLeft   &kp LC(LEFT_ARROW)
+#define DesktopRight  &kp LC(RIGHT_ARROW)
 
-#define TmuxLeader &kp LC(A)
+#define TmuxLeader  &kp LC(A)
 
 // Vi shortcuts
 // Go back 
