@@ -202,7 +202,7 @@ layers:
   - ''
   - ''
   - ''
-  - Ctl+A
+  - '&kb LG(A)'
   - Gui+S
   - ''
   - Gui+F
