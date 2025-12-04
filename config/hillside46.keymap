@@ -67,7 +67,7 @@ ZMK_CONDITIONAL_LAYER(system_layer_linux, SYMBOL_L NAV_LNX_L, SYSTEM_L)
         compatible = "zmk,keymap";
 
         mac_hrm_layer {
-            display-name = "MAC-HM";
+            display-name = "MAC ";
             /* Mac (Cmd) COLEMAK-DH with home row mods */
             
             bindings = <
@@ -84,7 +84,7 @@ ZMK_CONDITIONAL_LAYER(system_layer_linux, SYMBOL_L NAV_LNX_L, SYSTEM_L)
         };
 
         linux_hrm_layer {
-            display-name = "LNX-HM";
+            display-name = "LNX";
             /* Linux (Ctrl) COLEMAK-DH with home row mods */
             
             bindings = <
