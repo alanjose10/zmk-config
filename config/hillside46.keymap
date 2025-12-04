@@ -19,12 +19,12 @@
 
 // Layers
 #define MAC_L           0
-#define UBU_L           1
+#define LNX_L           1
 #define SYMBOL_L        2
 #define NAV_MAC_L       3
-#define NAV_UBU_L       4
+#define NAV_LNX_L       4
 #define SHORTCUTS_MAC_L 5
-#define SHORTCUTS_UBU_L 6
+#define SHORTCUTS_LNX_L 6
 #define ADJ_L           7
 #define SYSTEM_L        8
 
@@ -33,9 +33,9 @@
 #include "hillside-ht.dtsi"
 
 ZMK_CONDITIONAL_LAYER(adjust_layer_mac, SHORTCUTS_MAC_L NAV_MAC_L, ADJ_L)
-ZMK_CONDITIONAL_LAYER(adjust_layer_ubuntu, SHORTCUTS_UBU_L NAV_UBU_L, ADJ_L)
+ZMK_CONDITIONAL_LAYER(adjust_layer_linux, SHORTCUTS_LNX_L NAV_LNX_L, ADJ_L)
 ZMK_CONDITIONAL_LAYER(system_layer_mac, SYMBOL_L NAV_MAC_L, SYSTEM_L)
-ZMK_CONDITIONAL_LAYER(system_layer_ubuntu, SYMBOL_L NAV_UBU_L, SYSTEM_L)
+ZMK_CONDITIONAL_LAYER(system_layer_linux, SYMBOL_L NAV_LNX_L, SYSTEM_L)
 
 &mt {
     tapping-term-ms = <200>;
@@ -83,9 +83,9 @@ ZMK_CONDITIONAL_LAYER(system_layer_ubuntu, SYMBOL_L NAV_UBU_L, SYSTEM_L)
             >;
         };
 
-        ubuntu_hrm_layer {
-            display-name = "UBU-HM";
-            /* Ubuntu (Ctrl) COLEMAK-DH with home row mods */
+        linux_hrm_layer {
+            display-name = "LNX-HM";
+            /* Linux (Ctrl) COLEMAK-DH with home row mods */
             
             bindings = <
 // ╭────────────────────────┬────────────────────────┬────────────────────────┬────────────────────────┬────────────────────────┬────────────────────────╮                                                                                                         ╭────────────────────────┬────────────────────────┬────────────────────────┬───────────────────────┬────────────────────────┬────────────────────────╮
@@ -95,7 +95,7 @@ ZMK_CONDITIONAL_LAYER(system_layer_ubuntu, SYMBOL_L NAV_UBU_L, SYSTEM_L)
 // ├────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┬────────────────────────╮                                                       ╭────────────────────────┬────────────────────────┼────────────────────────┼────────────────────────┼───────────────────────┼────────────────────────┼────────────────────────┤
     &none                    &kp Z                    &kp X                    &kp C                    &kp D                    &kp V                    &kp ENTER                                                                        &kp CAPS                 &kp K                    &kp H                    &kp COMMA                &kp DOT                  &kp SLASH               &none            
 // ├────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┬────────────────────────┬────────────────────────╮     ╭────────────────────────┬────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼───────────────────────┼────────────────────────┼────────────────────────┤
-                                                                                                        &kp BSPC                 &lt SYMBOL_L TAB         &thumb_mt LSHIFT SPACE   &lt SHORTCUTS_UBU_L ESC            &lt NAV_UBU_L ENTER      &thumb_mt RSHIFT BSPC    &lt SYMBOL_L DEL         &none               
+                                                                                                        &kp BSPC                 &lt SYMBOL_L TAB         &thumb_mt LSHIFT SPACE   &lt SHORTCUTS_LNX_L ESC            &lt NAV_LNX_L ENTER      &thumb_mt RSHIFT BSPC    &lt SYMBOL_L DEL         &none               
 //                                                                                                     ╰────────────────────────┴────────────────────────┴────────────────────────┴────────────────────────╯     ╰────────────────────────┴────────────────────────┴────────────────────────┴────────────────────────╯
             >;
         };
@@ -137,13 +137,13 @@ ZMK_CONDITIONAL_LAYER(system_layer_ubuntu, SYMBOL_L NAV_UBU_L, SYSTEM_L)
 
         };
 
-        nav_ubuntu_layer {
-            display-name = "NAV-UBU";
-            /* Navigation and Mouse - Ubuntu shortcuts */
+        nav_linux_layer {
+            display-name = "NAV-LNX";
+            /* Navigation and Mouse - Linux shortcuts */
 
             bindings = <
 // ╭────────────────────────┬────────────────────────┬────────────────────────┬────────────────────────┬────────────────────────┬────────────────────────╮                                                                                                         ╭────────────────────────┬────────────────────────┬────────────────────────┬───────────────────────┬────────────────────────┬────────────────────────╮
-    &none                    &none                    &msc SCRL_RIGHT          &mmv MOVE_UP             &msc SCRL_LEFT           &none                                                                                                                              Ubuntu_DesktopLeft       &mkp LCLK                &mkp RCLK                Ubuntu_DesktopRight     &none                    &none
+    &none                    &none                    &msc SCRL_RIGHT          &mmv MOVE_UP             &msc SCRL_LEFT           &none                                                                                                                              Linux_DesktopLeft       &mkp LCLK                &mkp RCLK                Linux_DesktopRight     &none                    &none
 // ├────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┤                                                                                                         ├────────────────────────┼────────────────────────┼────────────────────────┼───────────────────────┼────────────────────────┼────────────────────────┤
     &none                    &none                    &mmv MOVE_LEFT           &mmv MOVE_DOWN           &mmv MOVE_RIGHT          &none                                                                                                                              &kp LEFT                 &kp DOWN                 &kp UP                   &kp RIGHT               &none                    &none
 // ├────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┬────────────────────────╮                                                       ╭────────────────────────┬────────────────────────┼────────────────────────┼────────────────────────┼───────────────────────┼────────────────────────┼────────────────────────┤
@@ -172,17 +172,17 @@ ZMK_CONDITIONAL_LAYER(system_layer_ubuntu, SYMBOL_L NAV_UBU_L, SYSTEM_L)
             >;
         };
 
-        shortcuts_ubuntu_layer {
-            display-name = "SHORTCUTS-UBU";
-            /* Ubuntu shortcuts */
+        shortcuts_linux_layer {
+            display-name = "SHORTCUTS-LNX";
+            /* Linux shortcuts */
 
             bindings = <
 // ╭────────────────────────┬────────────────────────┬────────────────────────┬────────────────────────┬────────────────────────┬────────────────────────╮                                                                                                         ╭────────────────────────┬────────────────────────┬────────────────────────┬───────────────────────┬────────────────────────┬────────────────────────╮
-    &none                    Ubuntu_Previous          Ubuntu_Back              Ubuntu_Forward           Ubuntu_Next             &none                                                                                                                              &vi_tab_prev             Vi_C_o                   Vi_C_i                   &vi_tab_next            &none                    &none 
+    &none                    Linux_Previous          Linux_Back              Linux_Forward           Linux_Next             &none                                                                                                                              &vi_tab_prev             Vi_C_o                   Vi_C_i                   &vi_tab_next            &none                    &none 
 // ├────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┤                                                                                                         ├────────────────────────┼────────────────────────┼────────────────────────┼───────────────────────┼────────────────────────┼────────────────────────┤
-    &none                    Ubuntu_SelectAll         Ubuntu_Save              &none                    Ubuntu_Find             &none                                                                                                                              &none                    &none                    &none                    &none                   &none                    &none 
+    &none                    Linux_SelectAll         Linux_Save              &none                    Linux_Find             &none                                                                                                                              &none                    &none                    &none                    &none                   &none                    &none 
 // ├────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┬────────────────────────╮                                                       ╭────────────────────────┬────────────────────────┼────────────────────────┼────────────────────────┼───────────────────────┼────────────────────────┼────────────────────────┤
-    &none                    Ubuntu_Undo              Ubuntu_Cut               Ubuntu_Copy              Ubuntu_Paste            &none                    &none                                                                            &none                    &none                    &none                    &none                    &none                   &none                    &none 
+    &none                    Linux_Undo              Linux_Cut               Linux_Copy              Linux_Paste            &none                    &none                                                                            &none                    &none                    &none                    &none                    &none                   &none                    &none 
 // ├────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┬────────────────────────┬────────────────────────╮     ╭────────────────────────┬────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼───────────────────────┼────────────────────────┼────────────────────────┤
                                                                                                         &trans                   &trans                   &trans                   &trans                         &trans                   &trans                   &trans                   &trans
 //                                                                                                     ╰────────────────────────┴────────────────────────┴────────────────────────┴────────────────────────╯     ╰────────────────────────┴────────────────────────┴────────────────────────┴────────────────────────╯
