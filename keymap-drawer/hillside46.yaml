@@ -463,10 +463,10 @@ combos:
 - p: [30, 31]
   k: '&studio_unlock'
   l: [MAC, LINUX]
-- p: [38, 45]
+- p: [39, 44]
   k: {t: LINUX, h: toggle}
   l: [MAC]
-- p: [38, 45]
+- p: [39, 44]
   k: {t: MAC, h: toggle}
   l: [LINUX]
 - p: [12, 23]
