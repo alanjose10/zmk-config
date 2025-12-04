@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: hillside46}
 layers:
-  MAC-HM:
+  MAC :
   - '&key_repeat'
   - Q
   - W
@@ -47,7 +47,7 @@ layers:
   - {t: BSPC, h: RSHIFT}
   - {t: DEL, h: SYMBOLS}
   - ''
-  LNX-HM:
+  LNX:
   - '&key_repeat'
   - Q
   - W
@@ -426,49 +426,49 @@ layers:
 combos:
 - p: [4, 16]
   k: '-'
-  l: [MAC-HM, LNX-HM]
+  l: [MAC , LNX]
 - p: [3, 15]
   k: +
-  l: [MAC-HM, LNX-HM]
+  l: [MAC , LNX]
 - p: [16, 28]
   k: '='
-  l: [MAC-HM, LNX-HM]
+  l: [MAC , LNX]
 - p: [15, 27]
   k: '!'
-  l: [MAC-HM, LNX-HM]
+  l: [MAC , LNX]
 - p: [14, 26]
   k: '`'
-  l: [MAC-HM, LNX-HM]
+  l: [MAC , LNX]
 - p: [2, 14]
   k: '~'
-  l: [MAC-HM, LNX-HM]
+  l: [MAC , LNX]
 - p: [7, 19]
   k: ''''
-  l: [MAC-HM, LNX-HM]
+  l: [MAC , LNX]
 - p: [8, 20]
   k: '"'
-  l: [MAC-HM, LNX-HM]
+  l: [MAC , LNX]
 - p: [19, 33]
   k: _
-  l: [MAC-HM, LNX-HM]
+  l: [MAC , LNX]
 - p: [20, 34]
   k: '%'
-  l: [MAC-HM, LNX-HM]
+  l: [MAC , LNX]
 - p: [9, 21]
   k: '*'
-  l: [MAC-HM, LNX-HM]
+  l: [MAC , LNX]
 - p: [21, 35]
   k: '&'
-  l: [MAC-HM, LNX-HM]
+  l: [MAC , LNX]
 - p: [30, 31]
   k: '&studio_unlock'
-  l: [MAC-HM, LNX-HM]
+  l: [MAC , LNX]
 - p: [39, 44]
-  k: {t: LNX-HM, h: toggle}
-  l: [MAC-HM]
+  k: {t: LNX, h: toggle}
+  l: [MAC ]
 - p: [39, 44]
-  k: {t: MAC-HM, h: toggle}
-  l: [LNX-HM]
+  k: {t: MAC , h: toggle}
+  l: [LNX]
 - p: [12, 23]
   k: '&bootloader'
-  l: [MAC-HM, LNX-HM]
+  l: [MAC , LNX]

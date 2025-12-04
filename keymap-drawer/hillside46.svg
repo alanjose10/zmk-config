@@ -124,8 +124,8 @@ path.combo {
 }
 /* End Tabler Icons Cleanup */
 </style>
-<g transform="translate(30, 0)" class="layer-MAC-HM">
-<text x="0" y="28" class="label" id="MAC-HM">MAC-HM:</text>
+<g transform="translate(30, 0)" class="layer-MAC ">
+<text x="0" y="28" class="label" id="MAC-">MAC :</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 70)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -381,8 +381,8 @@ path.combo {
 <path d="M476,218 l-173,0" class="combo"/>
 <path d="M476,218 l173,0" class="combo"/>
 <rect rx="6" ry="6" x="462" y="205" width="28" height="26" class="combo"/>
-<a href="#LNX-HM">
-<text x="476" y="218" class="combo tap layer-activator">LNX-HM</text>
+<a href="#LNX">
+<text x="476" y="218" class="combo tap layer-activator">LNX</text>
 </a><text x="476" y="229" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-14">
@@ -393,8 +393,8 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 374)" class="layer-LNX-HM">
-<text x="0" y="28" class="label" id="LNX-HM">LNX-HM:</text>
+<g transform="translate(30, 374)" class="layer-LNX">
+<text x="0" y="28" class="label" id="LNX">LNX:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 70)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -650,8 +650,10 @@ path.combo {
 <path d="M476,218 l-173,0" class="combo"/>
 <path d="M476,218 l173,0" class="combo"/>
 <rect rx="6" ry="6" x="462" y="205" width="28" height="26" class="combo"/>
-<a href="#MAC-HM">
-<text x="476" y="218" class="combo tap layer-activator">MAC-HM</text>
+<a href="#MAC-">
+<text x="476" y="218" class="combo tap layer-activator">
+<tspan x="476" dy="-0.6em">MAC</tspan><tspan x="476" dy="1.2em"></tspan>
+</text>
 </a><text x="476" y="229" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-14">
