@@ -11,8 +11,24 @@
 #define Next      &kp LS(LG(RBKT))
 #define Previous  &kp LS(LG(LBKT))
 
+#define Ubuntu_Undo      &kp LC(Z)
+#define Ubuntu_Cut       &kp LC(X)
+#define Ubuntu_Copy      &kp LC(C)
+#define Ubuntu_Paste     &kp LC(V)
+#define Ubuntu_Find      &kp LC(F)
+#define Ubuntu_Save      &kp LC(S)
+#define Ubuntu_SelectAll &kp LC(A)
+
+#define Ubuntu_Forward   &kp LA(RIGHT_ARROW)
+#define Ubuntu_Back      &kp LA(LEFT_ARROW)
+#define Ubuntu_Next      &kp LC(TAB)
+#define Ubuntu_Previous  &kp LS(LC(TAB))
+
 #define DesktopLeft   &kp LC(LEFT_ARROW)
 #define DesktopRight  &kp LC(RIGHT_ARROW)
+
+#define Ubuntu_DesktopLeft   &kp LC(LA(LEFT_ARROW))
+#define Ubuntu_DesktopRight  &kp LC(LA(RIGHT_ARROW))
 
 #define TmuxLeader  &kp LC(A)
 
