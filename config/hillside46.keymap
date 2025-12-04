@@ -67,7 +67,7 @@ ZMK_CONDITIONAL_LAYER(system_layer_linux, SYMBOL_L NAV_LNX_L, SYSTEM_L)
         compatible = "zmk,keymap";
 
         mac_hrm_layer {
-            display-name = "MAC ";
+            display-name = "MAC";
             /* Mac (Cmd) COLEMAK-DH with home row mods */
             
             bindings = <
@@ -84,7 +84,7 @@ ZMK_CONDITIONAL_LAYER(system_layer_linux, SYMBOL_L NAV_LNX_L, SYSTEM_L)
         };
 
         linux_hrm_layer {
-            display-name = "LNX";
+            display-name = "LINUX";
             /* Linux (Ctrl) COLEMAK-DH with home row mods */
             
             bindings = <
@@ -101,7 +101,7 @@ ZMK_CONDITIONAL_LAYER(system_layer_linux, SYMBOL_L NAV_LNX_L, SYSTEM_L)
         };
 
         symbol_layer {
-            display-name = "SYMBOLS";
+            display-name = "SYMB";
             /* Symbols and Numbers*/
 
             bindings = <
@@ -156,7 +156,7 @@ ZMK_CONDITIONAL_LAYER(system_layer_linux, SYMBOL_L NAV_LNX_L, SYSTEM_L)
         };
 
         shortcuts_mac_layer {
-            display-name = "SHORTCUTS-MAC";
+            display-name = "SHORT-MAC";
             /* Mac shortcuts */
 
             bindings = <
@@ -173,7 +173,7 @@ ZMK_CONDITIONAL_LAYER(system_layer_linux, SYMBOL_L NAV_LNX_L, SYSTEM_L)
         };
 
         shortcuts_linux_layer {
-            display-name = "SHORTCUTS-LNX";
+            display-name = "SHORT-LNX";
             /* Linux shortcuts */
 
             bindings = <
@@ -190,7 +190,7 @@ ZMK_CONDITIONAL_LAYER(system_layer_linux, SYMBOL_L NAV_LNX_L, SYSTEM_L)
         };
 
         adj_layer {
-            display-name = "ADJUST";
+            display-name = "ADJ";
             /* Adjustments */
 
             bindings = <
@@ -208,7 +208,7 @@ ZMK_CONDITIONAL_LAYER(system_layer_linux, SYMBOL_L NAV_LNX_L, SYSTEM_L)
         };
 
         system_layer {
-            display-name = "SYSTEM";
+            display-name = "SYS";
             /* Bluetooth and System layer */
 
             bindings = <
