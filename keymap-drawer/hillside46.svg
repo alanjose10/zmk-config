@@ -124,8 +124,8 @@ path.combo {
 }
 /* End Tabler Icons Cleanup */
 </style>
-<g transform="translate(30, 0)" class="layer-MAC ">
-<text x="0" y="28" class="label" id="MAC-">MAC :</text>
+<g transform="translate(30, 0)" class="layer-MAC">
+<text x="0" y="28" class="label" id="MAC">MAC:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 70)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -289,8 +289,8 @@ path.combo {
 <g transform="translate(284, 218) rotate(15.0)" class="key keypos-39">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">TAB</text>
-<a href="#SYMBOLS">
-<text x="0" y="24" class="key hold layer-activator">SYMBOLS</text>
+<a href="#SYMB">
+<text x="0" y="24" class="key hold layer-activator">SYMB</text>
 </a></g>
 <g transform="translate(341, 241) rotate(30.0)" class="key keypos-40">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -300,8 +300,8 @@ path.combo {
 <g transform="translate(389, 278) rotate(45.0)" class="key keypos-41">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">ESC</text>
-<a href="#SHORTCUTS-MAC">
-<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 64%">SHORTCUTS-…</tspan></text>
+<a href="#SHORT-MAC">
+<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 78%">SHORT-MAC</tspan></text>
 </a></g>
 <g transform="translate(563, 278) rotate(-45.0)" class="key keypos-42">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -317,8 +317,8 @@ path.combo {
 <g transform="translate(668, 218) rotate(-15.0)" class="key keypos-44">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">DEL</text>
-<a href="#SYMBOLS">
-<text x="0" y="24" class="key hold layer-activator">SYMBOLS</text>
+<a href="#SYMB">
+<text x="0" y="24" class="key hold layer-activator">SYMB</text>
 </a></g>
 <g transform="translate(728, 210)" class="key keypos-45">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -378,12 +378,12 @@ path.combo {
 <text x="476" y="193" class="combo tap"><tspan style="font-size: 64%">&amp;studio_un…</tspan></text>
 </g>
 <g class="combo combopos-13">
-<path d="M476,218 l-173,0" class="combo"/>
-<path d="M476,218 l173,0" class="combo"/>
-<rect rx="6" ry="6" x="462" y="205" width="28" height="26" class="combo"/>
-<a href="#LNX">
-<text x="476" y="218" class="combo tap layer-activator">LNX</text>
-</a><text x="476" y="229" class="combo hold">toggle</text>
+<path d="M476,210 l-233,0" class="combo"/>
+<path d="M476,210 l233,0" class="combo"/>
+<rect rx="6" ry="6" x="462" y="197" width="28" height="26" class="combo"/>
+<a href="#LINUX">
+<text x="476" y="210" class="combo tap layer-activator">LINUX</text>
+</a><text x="476" y="221" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-14">
 <path d="M476,126 l-429,0" class="combo"/>
@@ -393,8 +393,8 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 374)" class="layer-LNX">
-<text x="0" y="28" class="label" id="LNX">LNX:</text>
+<g transform="translate(30, 374)" class="layer-LINUX">
+<text x="0" y="28" class="label" id="LINUX">LINUX:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 70)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -558,8 +558,8 @@ path.combo {
 <g transform="translate(284, 218) rotate(15.0)" class="key keypos-39">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">TAB</text>
-<a href="#SYMBOLS">
-<text x="0" y="24" class="key hold layer-activator">SYMBOLS</text>
+<a href="#SYMB">
+<text x="0" y="24" class="key hold layer-activator">SYMB</text>
 </a></g>
 <g transform="translate(341, 241) rotate(30.0)" class="key keypos-40">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -569,8 +569,8 @@ path.combo {
 <g transform="translate(389, 278) rotate(45.0)" class="key keypos-41">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">ESC</text>
-<a href="#SHORTCUTS-LNX">
-<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 64%">SHORTCUTS-…</tspan></text>
+<a href="#SHORT-LNX">
+<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 78%">SHORT-LNX</tspan></text>
 </a></g>
 <g transform="translate(563, 278) rotate(-45.0)" class="key keypos-42">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -586,8 +586,8 @@ path.combo {
 <g transform="translate(668, 218) rotate(-15.0)" class="key keypos-44">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">DEL</text>
-<a href="#SYMBOLS">
-<text x="0" y="24" class="key hold layer-activator">SYMBOLS</text>
+<a href="#SYMB">
+<text x="0" y="24" class="key hold layer-activator">SYMB</text>
 </a></g>
 <g transform="translate(728, 210)" class="key keypos-45">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -647,14 +647,12 @@ path.combo {
 <text x="476" y="193" class="combo tap"><tspan style="font-size: 64%">&amp;studio_un…</tspan></text>
 </g>
 <g class="combo combopos-13">
-<path d="M476,218 l-173,0" class="combo"/>
-<path d="M476,218 l173,0" class="combo"/>
-<rect rx="6" ry="6" x="462" y="205" width="28" height="26" class="combo"/>
-<a href="#MAC-">
-<text x="476" y="218" class="combo tap layer-activator">
-<tspan x="476" dy="-0.6em">MAC</tspan><tspan x="476" dy="1.2em"></tspan>
-</text>
-</a><text x="476" y="229" class="combo hold">toggle</text>
+<path d="M476,210 l-233,0" class="combo"/>
+<path d="M476,210 l233,0" class="combo"/>
+<rect rx="6" ry="6" x="462" y="197" width="28" height="26" class="combo"/>
+<a href="#MAC">
+<text x="476" y="210" class="combo tap layer-activator">MAC</text>
+</a><text x="476" y="221" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-14">
 <path d="M476,126 l-429,0" class="combo"/>
@@ -664,8 +662,8 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 748)" class="layer-SYMBOLS">
-<text x="0" y="28" class="label" id="SYMBOLS">SYMBOLS:</text>
+<g transform="translate(30, 748)" class="layer-SYMB">
+<text x="0" y="28" class="label" id="SYMB">SYMB:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 70)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1238,8 +1236,8 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 1870)" class="layer-SHORTCUTS-MAC">
-<text x="0" y="28" class="label" id="SHORTCUTS-MAC">SHORTCUTS-MAC:</text>
+<g transform="translate(30, 1870)" class="layer-SHORT-MAC">
+<text x="0" y="28" class="label" id="SHORT-MAC">SHORT-MAC:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 70)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1407,8 +1405,8 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 2244)" class="layer-SHORTCUTS-LNX">
-<text x="0" y="28" class="label" id="SHORTCUTS-LNX">SHORTCUTS-LNX:</text>
+<g transform="translate(30, 2244)" class="layer-SHORT-LNX">
+<text x="0" y="28" class="label" id="SHORT-LNX">SHORT-LNX:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 70)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1578,8 +1576,8 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 2618)" class="layer-ADJUST">
-<text x="0" y="28" class="label" id="ADJUST">ADJUST:</text>
+<g transform="translate(30, 2618)" class="layer-ADJ">
+<text x="0" y="28" class="label" id="ADJ">ADJ:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 70)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1742,8 +1740,8 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 2992)" class="layer-SYSTEM">
-<text x="0" y="28" class="label" id="SYSTEM">SYSTEM:</text>
+<g transform="translate(30, 2992)" class="layer-SYS">
+<text x="0" y="28" class="label" id="SYS">SYS:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 70)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>

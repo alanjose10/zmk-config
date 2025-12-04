@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: hillside46}
 layers:
-  MAC :
+  MAC:
   - '&key_repeat'
   - Q
   - W
@@ -40,14 +40,14 @@ layers:
   - /
   - ''
   - BSPC
-  - {t: TAB, h: SYMBOLS}
+  - {t: TAB, h: SYMB}
   - {t: SPACE, h: LSHIFT}
-  - {t: ESC, h: SHORTCUTS-MAC}
+  - {t: ESC, h: SHORT-MAC}
   - {t: ENTER, h: NAV-MAC}
   - {t: BSPC, h: RSHIFT}
-  - {t: DEL, h: SYMBOLS}
+  - {t: DEL, h: SYMB}
   - ''
-  LNX:
+  LINUX:
   - '&key_repeat'
   - Q
   - W
@@ -87,14 +87,14 @@ layers:
   - /
   - ''
   - BSPC
-  - {t: TAB, h: SYMBOLS}
+  - {t: TAB, h: SYMB}
   - {t: SPACE, h: LSHIFT}
-  - {t: ESC, h: SHORTCUTS-LNX}
+  - {t: ESC, h: SHORT-LNX}
   - {t: ENTER, h: NAV-LNX}
   - {t: BSPC, h: RSHIFT}
-  - {t: DEL, h: SYMBOLS}
+  - {t: DEL, h: SYMB}
   - ''
-  SYMBOLS:
+  SYMB:
   - ''
   - '|'
   - '@'
@@ -235,7 +235,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  SHORTCUTS-MAC:
+  SHORT-MAC:
   - ''
   - Sft+Gui+[
   - Gui+[
@@ -282,7 +282,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  SHORTCUTS-LNX:
+  SHORT-LNX:
   - ''
   - Sft+Ctl+TAB
   - Alt+LEFT ARROW
@@ -329,7 +329,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  ADJUST:
+  ADJ:
   - ''
   - ''
   - ''
@@ -376,7 +376,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  SYSTEM:
+  SYS:
   - ''
   - ''
   - ''
@@ -426,49 +426,49 @@ layers:
 combos:
 - p: [4, 16]
   k: '-'
-  l: [MAC , LNX]
+  l: [MAC, LINUX]
 - p: [3, 15]
   k: +
-  l: [MAC , LNX]
+  l: [MAC, LINUX]
 - p: [16, 28]
   k: '='
-  l: [MAC , LNX]
+  l: [MAC, LINUX]
 - p: [15, 27]
   k: '!'
-  l: [MAC , LNX]
+  l: [MAC, LINUX]
 - p: [14, 26]
   k: '`'
-  l: [MAC , LNX]
+  l: [MAC, LINUX]
 - p: [2, 14]
   k: '~'
-  l: [MAC , LNX]
+  l: [MAC, LINUX]
 - p: [7, 19]
   k: ''''
-  l: [MAC , LNX]
+  l: [MAC, LINUX]
 - p: [8, 20]
   k: '"'
-  l: [MAC , LNX]
+  l: [MAC, LINUX]
 - p: [19, 33]
   k: _
-  l: [MAC , LNX]
+  l: [MAC, LINUX]
 - p: [20, 34]
   k: '%'
-  l: [MAC , LNX]
+  l: [MAC, LINUX]
 - p: [9, 21]
   k: '*'
-  l: [MAC , LNX]
+  l: [MAC, LINUX]
 - p: [21, 35]
   k: '&'
-  l: [MAC , LNX]
+  l: [MAC, LINUX]
 - p: [30, 31]
   k: '&studio_unlock'
-  l: [MAC , LNX]
-- p: [39, 44]
-  k: {t: LNX, h: toggle}
-  l: [MAC ]
-- p: [39, 44]
-  k: {t: MAC , h: toggle}
-  l: [LNX]
+  l: [MAC, LINUX]
+- p: [38, 45]
+  k: {t: LINUX, h: toggle}
+  l: [MAC]
+- p: [38, 45]
+  k: {t: MAC, h: toggle}
+  l: [LINUX]
 - p: [12, 23]
   k: '&bootloader'
-  l: [MAC , LNX]
+  l: [MAC, LINUX]
