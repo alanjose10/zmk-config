@@ -389,7 +389,7 @@ layers:
   - EP OFF
   - EP ON
   - ''
-  - '&sys_reset'
+  - ''
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
@@ -400,7 +400,7 @@ layers:
   - ''
   - ''
   - ''
-  - '&sys_reset'
+  - ''
   - '&bootloader'
   - ''
   - ''
@@ -469,6 +469,9 @@ combos:
 - p: [39, 44]
   k: {t: MAC, h: toggle}
   l: [LINUX]
+- p: [0, 11]
+  k: '&sys_reset'
+  l: [MAC, LINUX, SYMB, NAV-MAC, NAV-LNX]
 - p: [12, 23]
   k: '&bootloader'
   l: [MAC, LINUX]
