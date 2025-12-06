@@ -11,8 +11,24 @@
 #define Next      &kp LS(LG(RBKT))
 #define Previous  &kp LS(LG(LBKT))
 
+#define Linux_Undo      &kp LC(Z)
+#define Linux_Cut       &kp LC(X)
+#define Linux_Copy      &kp LC(C)
+#define Linux_Paste     &kp LC(V)
+#define Linux_Find      &kp LC(F)
+#define Linux_Save      &kp LC(S)
+#define Linux_SelectAll &kp LC(A)
+
+#define Linux_Forward   &kp LA(RIGHT_ARROW)
+#define Linux_Back      &kp LA(LEFT_ARROW)
+#define Linux_Next      &kp LC(TAB)
+#define Linux_Previous  &kp LS(LC(TAB))
+
 #define DesktopLeft   &kp LC(LEFT_ARROW)
 #define DesktopRight  &kp LC(RIGHT_ARROW)
+
+#define Linux_DesktopLeft   &kp LC(LA(LEFT_ARROW))
+#define Linux_DesktopRight  &kp LC(LA(RIGHT_ARROW))
 
 #define TmuxLeader  &kp LC(A)
 
