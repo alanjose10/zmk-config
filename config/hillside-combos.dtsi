@@ -54,9 +54,6 @@ ZMK_COMBO(ch_amps, &kp AMPS, RM3 RB3, MAC_L LNX_L, COMBO_TERM_FAST, COMBO_IDLE_F
 
 // BOTH SIDES
 
-// Unlock ZMK Studio
-ZMK_COMBO(ch_studio_unlock,  &studio_unlock, LH4 RH4, MAC_L LNX_L, COMBO_TERM_SLOW)
-
 // Toggle Mac/Linux base
 ZMK_COMBO(ch_toggle_os_to_linux, &to LNX_L, LH2 RH2, MAC_L, COMBO_TERM_SLOW)
 ZMK_COMBO(ch_toggle_os_to_mac, &to MAC_L, LH2 RH2, LNX_L, COMBO_TERM_SLOW)
