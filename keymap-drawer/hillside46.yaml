@@ -471,4 +471,4 @@ combos:
   l: [MAC, LINUX, SYMB, NAV-MAC, NAV-LNX]
 - p: [12, 23]
   k: '&bootloader'
-  l: [MAC, LINUX]
+  l: [SYS]
