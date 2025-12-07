@@ -460,9 +460,6 @@ combos:
 - p: [21, 35]
   k: '&'
   l: [MAC, LINUX]
-- p: [30, 31]
-  k: '&studio_unlock'
-  l: [MAC, LINUX]
 - p: [39, 44]
   k: {t: LINUX, h: toggle}
   l: [MAC]
