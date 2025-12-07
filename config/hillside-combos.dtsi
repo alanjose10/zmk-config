@@ -62,4 +62,4 @@ ZMK_COMBO(ch_toggle_os_to_mac, &to MAC_L, LH2 RH2, LNX_L, COMBO_TERM_SLOW)
 ZMK_COMBO(ch_soft_reset, &sys_reset, LT5 RT5, MAC_L LNX_L SYMBOL_L NAV_MAC_L NAV_LNX_L, COMBO_TERM_SLOW)
 
 // Dongle bootloader 
-ZMK_COMBO(ch_dongle_bootloader, &bootloader, LM5 RM5, MAC_L LNX_L, COMBO_TERM_SLOW)
+ZMK_COMBO(ch_dongle_bootloader, &bootloader, LM5 RM5, SYSTEM_L, COMBO_TERM_SLOW)
