@@ -32,7 +32,7 @@ layers:
   - D
   - V
   - ENTER
-  - CAPS
+  - ''
   - ''
   - ''
   - K
@@ -41,11 +41,11 @@ layers:
   - .
   - /
   - ''
+  - ''
   - BSPC
   - {t: TAB, h: SYMB}
   - {t: SPACE, h: LSHIFT}
   - {t: ESC, h: SHORT}
-  - ''
   - {t: ENTER, h: NAV}
   - {t: BSPC, h: RSHIFT}
   - {t: DEL, h: SYMB}
@@ -93,8 +93,8 @@ layers:
   - ''
   - ''
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -197,8 +197,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -248,8 +248,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -297,8 +297,8 @@ layers:
   - ''
   - '&bootloader'
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
