@@ -1,7 +1,56 @@
 layout: {zmk_keyboard: kyria_rev3}
 layers:
-  Default Layer: [ESC, Q, W, E, R, T, Y, U, I, O, P, \, TAB, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT, Z, X, C, V, B, LSHFT, LSHFT, Function Layer, LSHFT, N, M,
-    ',', ., /, RCTRL, LGUI, DEL, RET, SPACE, ESC, RET, SPACE, TAB, BSPC, RALT]
+  MAC:
+  - '&key_repeat'
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - J
+  - L
+  - U
+  - Y
+  - ;
+  - ''
+  - LSHIFT
+  - A
+  - {t: R, h: LCTRL}
+  - {t: S, h: LALT}
+  - {t: T, h: LGUI}
+  - G
+  - M
+  - {t: N, h: RGUI}
+  - {t: E, h: RALT}
+  - {t: I, h: RCTRL}
+  - O
+  - RSHIFT
+  - ''
+  - Z
+  - X
+  - C
+  - D
+  - V
+  - ENTER
+  - CAPS
+  - Function Layer
+  - ''
+  - K
+  - H
+  - ','
+  - .
+  - /
+  - ''
+  - BSPC
+  - TAB
+  - SPACE
+  - LSHIFT
+  - ESC
+  - ENTER
+  - RSHIFT
+  - BSPC
+  - DEL
+  - ''
   Function Layer:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
