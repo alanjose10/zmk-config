@@ -34,6 +34,15 @@
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 30 31 40 41 42 43 44>;
             hold-trigger-on-release;
         };
+
+        thumb_mt: thumb_mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <220>;
+            quick-tap-ms = <190>;
+            bindings = <&kp>, <&kp>;
+        };
     };
 
     keymap {
@@ -47,7 +56,7 @@
 &key_repeat  &kp Q  &kp W         &kp F        &kp P        &kp B                                                &kp J  &kp L        &kp U        &kp Y         &kp SEMI   &none
 &kp LSHIFT   &kp A  &hml LCTRL R  &hml LALT S  &hml LGUI T  &kp G                                                &kp M  &hmr RGUI N  &hmr RALT E  &hmr RCTRL I  &kp O      &kp RSHIFT
 &none        &kp Z  &kp X         &kp C        &kp D        &kp V  &kp ENTER  &kp CAPS   &mo 1    &none          &kp K  &kp H        &kp COMMA    &kp DOT       &kp SLASH  &none
-                                  &kp BSPC     &kp TAB      &kp SPACE  &kp LSHIFT  &kp ESC  &kp ENTER  &kp RSHIFT  &kp BSPC  &kp DEL  &none
+                                  &kp BSPC     &kp TAB      &thumb_mt LSHIFT SPACE  &kp ESC  &kp ESC  &kp ENTER  &kp ENTER  &thumb_mt RSHIFT BSPC  &kp DEL  &none
             >;
         };
 
