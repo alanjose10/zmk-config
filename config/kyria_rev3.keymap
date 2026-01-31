@@ -336,57 +336,57 @@
         // LEFT SIDE COMBOS
         // ─────────────────────────────────────────────────────────────────────────────────────────────────────
 
-        // Q + A = - (minus)
+        // P + T = - (minus)
         combo_minus {
             timeout-ms = <30>;
             require-prior-idle-ms = <150>;
-            key-positions = <1 13>;
+            key-positions = <4 16>;
             bindings = <&kp MINUS>;
             layers = <MAC_L>;
         };
 
-        // W + R = ~ (tilda)
-        combo_plus {
-            timeout-ms = <30>;
-            require-prior-idle-ms = <150>;
-            key-positions = <2 14>;
-            bindings = <&kp TILDA>;
-            layers = <MAC_L>;
-        };
-
-        // A + Z = = (equal)
-        combo_equal {
-            timeout-ms = <30>;
-            require-prior-idle-ms = <150>;
-            key-positions = <13 25>;
-            bindings = <&kp EQUAL>;
-            layers = <MAC_L>;
-        };
-
-        // R + X = ! (exclamation)
-        combo_excl {
-            timeout-ms = <30>;
-            require-prior-idle-ms = <150>;
-            key-positions = <14 26>;
-            bindings = <&kp EXCL>;
-            layers = <MAC_L>;
-        };
-
-        // S + C = ` (grave)
-        combo_grave {
-            timeout-ms = <30>;
-            require-prior-idle-ms = <150>;
-            key-positions = <15 27>;
-            bindings = <&kp GRAVE>;
-            layers = <MAC_L>;
-        };
-
         // F + S = + (plus)
-        combo_tilde {
+        combo_plus {
             timeout-ms = <30>;
             require-prior-idle-ms = <150>;
             key-positions = <3 15>;
             bindings = <&kp PLUS>;
+            layers = <MAC_L>;
+        };
+
+        // T + D = = (equal)
+        combo_equal {
+            timeout-ms = <30>;
+            require-prior-idle-ms = <150>;
+            key-positions = <16 28>;
+            bindings = <&kp EQUAL>;
+            layers = <MAC_L>;
+        };
+
+        // S + C = ! (exclamation)
+        combo_excl {
+            timeout-ms = <30>;
+            require-prior-idle-ms = <150>;
+            key-positions = <15 27>;
+            bindings = <&kp EXCL>;
+            layers = <MAC_L>;
+        };
+
+        // R + X = ` (grave)
+        combo_grave {
+            timeout-ms = <30>;
+            require-prior-idle-ms = <150>;
+            key-positions = <14 26>;
+            bindings = <&kp GRAVE>;
+            layers = <MAC_L>;
+        };
+
+        // W + R = ~ (tilde)
+        combo_tilde {
+            timeout-ms = <30>;
+            require-prior-idle-ms = <150>;
+            key-positions = <2 14>;
+            bindings = <&kp TILDE>;
             layers = <MAC_L>;
         };
 
@@ -418,6 +418,15 @@
             require-prior-idle-ms = <150>;
             key-positions = <19 35>;
             bindings = <&kp UNDER>;
+            layers = <MAC_L>;
+        };
+
+        // E + , = % (percent)
+        combo_prcnt {
+            timeout-ms = <30>;
+            require-prior-idle-ms = <150>;
+            key-positions = <20 36>;
+            bindings = <&kp PRCNT>;
             layers = <MAC_L>;
         };
 
