@@ -322,9 +322,9 @@
    ║  Vertical combos for commonly used symbols                                                     ║
    ║                                                                                                ║
    ║  Left hand:                              Right hand:                                           ║
-   ║   Q+A = -    W+R = +                      L+N = '    U+E = "                                   ║
-   ║   A+Z = =    R+X = !                      N+H = _                                              ║
-   ║   S+C = `    F+S = ~                      Y+I = *    I+. = &                                   ║
+   ║   P+T = -    F+S = +                      L+N = '    U+E = "                                   ║
+   ║   T+D = =    S+C = !                      N+H = _    E+, = %                                   ║
+   ║   R+X = `    W+R = ~                      Y+I = *    I+. = &                                   ║
    ║                                                                                                ║
    ╚════════════════════════════════════════════════════════════════════════════════════════════════╝ */
 
@@ -345,12 +345,12 @@
             layers = <MAC_L>;
         };
 
-        // W + R = + (plus)
+        // W + R = ~ (tilda)
         combo_plus {
             timeout-ms = <30>;
             require-prior-idle-ms = <150>;
             key-positions = <2 14>;
-            bindings = <&kp PLUS>;
+            bindings = <&kp TILDA>;
             layers = <MAC_L>;
         };
 
@@ -381,12 +381,12 @@
             layers = <MAC_L>;
         };
 
-        // F + S = ~ (tilde)
+        // F + S = + (plus)
         combo_tilde {
             timeout-ms = <30>;
             require-prior-idle-ms = <150>;
             key-positions = <3 15>;
-            bindings = <&kp TILDE>;
+            bindings = <&kp PLUS>;
             layers = <MAC_L>;
         };
 
