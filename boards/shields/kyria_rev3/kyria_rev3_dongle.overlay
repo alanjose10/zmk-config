@@ -27,12 +27,12 @@
     //     status = "disabled";
     // };
 
-    /* Sensors node tells ZMK to expect encoder events from peripherals */
-    sensors: sensors {
-        compatible = "zmk,keymap-sensors";
-        sensors = <&left_encoder &right_encoder>;
-        triggers-per-rotation = <20>;
-    };
+    // /* Sensors node tells ZMK to expect encoder events from peripherals */
+    // sensors: sensors {
+    //     compatible = "zmk,keymap-sensors";
+    //     sensors = <&left_encoder &right_encoder>;
+    //     triggers-per-rotation = <20>;
+    // };
 
     // default_transform: keymap_transform_0 {
     //     compatible = "zmk,matrix-transform";
