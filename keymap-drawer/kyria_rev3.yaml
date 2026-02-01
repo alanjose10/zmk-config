@@ -32,8 +32,8 @@ layers:
   - D
   - V
   - ENTER
-  - ''
-  - ''
+  - MUTE
+  - MUTE
   - ''
   - K
   - H
@@ -83,8 +83,8 @@ layers:
   - )
   - ''
   - ''
-  - ''
-  - ''
+  - MUTE
+  - MUTE
   - ''
   - ''
   - '4'
@@ -134,8 +134,8 @@ layers:
   - '&msc SCRL_DOWN'
   - ''
   - ''
-  - ''
-  - ''
+  - MUTE
+  - MUTE
   - ''
   - HOME
   - PG DN
@@ -185,8 +185,8 @@ layers:
   - Gui+V
   - ''
   - ''
-  - ''
-  - ''
+  - MUTE
+  - MUTE
   - ''
   - ''
   - ''
@@ -236,8 +236,8 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
+  - MUTE
+  - MUTE
   - ''
   - ''
   - PREV
@@ -287,9 +287,9 @@ layers:
   - ''
   - ''
   - BT CLR
-  - ''
+  - MUTE
+  - MUTE
   - BT CLR ALL
-  - ''
   - ''
   - ''
   - ''
