@@ -1,5 +1,4 @@
 #include <dt-bindings/zmk/matrix_transform.h>
-#include "kyria_rev3.dtsi"
 
 / {
     chosen {
