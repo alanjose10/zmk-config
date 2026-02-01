@@ -2,17 +2,17 @@
 #include "kyria_rev3.dtsi"
 
 / {
-    chosen {
-        zmk,kscan = &mock_kscan;
-        zmk,matrix-transform = &default_transform;
-    };
-
-    mock_kscan: mock_kscan_0 {
-        compatible = "zmk,kscan-mock";
-        columns = <0>;
-        rows = <0>;
-        events = <0>;
-    };
+    // chosen {
+    //     zmk,kscan = &mock_kscan;
+    //     zmk,matrix-transform = &default_transform;
+    // };
+    //
+    // mock_kscan: mock_kscan_0 {
+    //     compatible = "zmk,kscan-mock";
+    //     columns = <0>;
+    //     rows = <0>;
+    //     events = <0>;
+    // };
 
     // /* Encoder definitions for the dongle (no GPIO needed - events come over BLE) */
     // left_encoder: encoder_left {
