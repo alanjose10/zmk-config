@@ -10,7 +10,7 @@
 
 / {
     chosen {
-        zephyr,display = &oled;
+        // zephyr,display = &oled;
         zmk,kscan = &kscan0;
         zmk,physical-layout = &splitkb_kyria_6col_layout;
     };
