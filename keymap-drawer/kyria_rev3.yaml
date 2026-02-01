@@ -32,8 +32,8 @@ layers:
   - D
   - V
   - ENTER
-  - MUTE
-  - MUTE
+  - A
+  - A
   - ''
   - K
   - H
@@ -83,8 +83,8 @@ layers:
   - )
   - ''
   - ''
-  - MUTE
-  - MUTE
+  - ''
+  - ''
   - ''
   - ''
   - '4'
