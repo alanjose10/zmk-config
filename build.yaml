@@ -1,6 +1,8 @@
 include:
   # - board: nice_nano_v2
   #   shield: tester_pro_micro
+
+  # Hillside
   - board: nice_nano_v2
     shield: settings_reset
   - board: seeeduino_xiao_ble
@@ -14,7 +16,10 @@ include:
   - board: nice_nano_v2
     shield: hillside46_dongle
 
+  # Kyria
   - board: nice_nano_v2
     shield: kyria_rev3_left
   - board: nice_nano_v2
     shield: kyria_rev3_right
+  - board: seeeduino_xiao_ble
+    shield: kyria_rev3_dongle

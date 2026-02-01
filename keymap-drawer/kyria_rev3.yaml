@@ -32,8 +32,8 @@ layers:
   - D
   - V
   - ENTER
-  - ''
-  - ''
+  - A
+  - A
   - ''
   - K
   - H
@@ -105,21 +105,21 @@ layers:
   NAV:
   - ''
   - ''
-  - ''
-  - ''
-  - ''
+  - '&msc SCRL_RIGHT'
+  - '&mmv MOVE_UP'
+  - '&msc SCRL_LEFT'
   - ''
   - Ctl+LEFT ARROW
-  - ''
-  - ''
+  - '&mkp LCLK'
+  - '&mkp RCLK'
   - Ctl+RIGHT ARROW
   - ''
   - ''
   - ''
   - ''
-  - LCTRL
-  - LALT
-  - LGUI
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_RIGHT'
   - ''
   - LEFT
   - DOWN
@@ -129,13 +129,13 @@ layers:
   - ''
   - ''
   - ''
+  - '&msc SCRL_UP'
+  - ''
+  - '&msc SCRL_DOWN'
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - MUTE
+  - MUTE
   - ''
   - HOME
   - PG DN
@@ -185,8 +185,8 @@ layers:
   - Gui+V
   - ''
   - ''
-  - ''
-  - ''
+  - MUTE
+  - MUTE
   - ''
   - ''
   - ''
@@ -236,8 +236,8 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
+  - MUTE
+  - MUTE
   - ''
   - ''
   - PREV
@@ -287,9 +287,9 @@ layers:
   - ''
   - ''
   - BT CLR
-  - ''
+  - MUTE
+  - MUTE
   - BT CLR ALL
-  - ''
   - ''
   - ''
   - ''
