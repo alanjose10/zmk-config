@@ -24,14 +24,26 @@
         RC(3,2) RC(3,4) RC(3,5) RC(3,1) RC(3,6) RC(3,7) RC(3,12) RC(3,8) RC(3,9) RC(3,11)
         >;
     };
+
+    physical_layout0: physical_layout_0 {
+        compatible = "zmk,physical-layout";
+        display-name = "Default Layout";
+        transform = <&default_transform>;
+    };
 };
 
 &left_encoder {
+    compatible = "alps,ec11";
     a-gpios = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
     b-gpios = <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+    steps = <80>;
+    status = "disabled";
 };
 
 &right_encoder {
+    compatible = "alps,ec11";
     a-gpios = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
     b-gpios = <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+    steps = <80>;
+    status = "disabled";
 };
