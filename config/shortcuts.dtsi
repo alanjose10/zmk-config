@@ -29,11 +29,3 @@
 
 #define Linux_DesktopLeft   &kp LC(LA(LEFT_ARROW))
 #define Linux_DesktopRight  &kp LC(LA(RIGHT_ARROW))
-
-#define TmuxLeader  &kp LC(A)
-
-// Vi shortcuts
-// Go back 
-#define Vi_C_o &kp LC(O)
-// Go forward
-#define Vi_C_i &kp LC(I)

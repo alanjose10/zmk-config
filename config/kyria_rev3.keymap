@@ -59,10 +59,6 @@
 #define DesktopLeft   &kp LC(LEFT_ARROW)
 #define DesktopRight  &kp LC(RIGHT_ARROW)
 
-// Vim shortcuts
-#define Vi_C_o &kp LC(O)   // Go back in jump list
-#define Vi_C_i &kp LC(I)   // Go forward in jump list
-
 /* ╔════════════════════════════════════════════════════════════════════════════════════════════════╗
    ║                                  KYRIA KEY POSITION REFERENCE                                  ║
    ╠════════════════════════════════════════════════════════════════════════════════════════════════╣
@@ -131,28 +127,6 @@
             tapping-term-ms = <220>;
             quick-tap-ms = <190>;
             bindings = <&kp>, <&kp>;
-        };
-
-        /* ─────────────────────────────────────────────────────────────────────────────────────────────────────
-         * Vim Macros
-         * ───────────────────────────────────────────────────────────────────────────────────────────────────── */
-
-        // Sends "gt" -> Vim: go to next tab
-        vi_tab_next: vi_tab_next {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
-            bindings = <&kp G &kp T>;
-        };
-
-        // Sends "gT" -> Vim: go to previous tab
-        vi_tab_prev: vi_tab_prev {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
-            bindings = <&kp G &kp LS(T)>;
         };
     };
 
@@ -275,7 +249,7 @@
 
             bindings = <
 // ╭────────────────────┬────────────────────┬────────────────────┬────────────────────┬────────────────────┬────────────────────╮                                                                                           ╭────────────────────┬────────────────────┬────────────────────┬────────────────────┬────────────────────┬────────────────────╮
-    &none                Previous             Back                 Forward              Next                 &none                                                                                                            &vi_tab_prev         Vi_C_o               Vi_C_i               &vi_tab_next         &none                &none
+    &none                Previous             Back                 Forward              Next                 &none                                                                                                            &none                &none                &none                &none                &none                &none
 // ├────────────────────┼────────────────────┼────────────────────┼────────────────────┼────────────────────┼────────────────────┤                                                                                           ├────────────────────┼────────────────────┼────────────────────┼────────────────────┼────────────────────┼────────────────────┤
     &none                SelectAll            Save                 &none                Find                 &none                                                                                                            &none                &none                &none                &none                &none                &none
 // ├────────────────────┼────────────────────┼────────────────────┼────────────────────┼────────────────────┼────────────────────┼────────────────────┬────────────────────╮       ├────────────────────┬────────────────────┼────────────────────┼────────────────────┼────────────────────┼────────────────────┼────────────────────┼────────────────────┤
@@ -484,6 +458,14 @@
             key-positions = <0 11>;
             bindings = <&sys_reset>;
             layers = <MAC_L SYMBOL_L NAV_L>;
+        };
+
+        // Dongle bootloader
+        combo_bootloader {
+            timeout-ms = <50>;
+            key-positions = <12 23>;
+            bindings = <&bootloader>;
+            layers = <SYSTEM_L>;
         };
     };
 };
