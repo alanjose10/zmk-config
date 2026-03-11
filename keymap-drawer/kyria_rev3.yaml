@@ -82,7 +82,7 @@ layers:
   - (
   - )
   - ''
-  - ''
+  - {t: ▽, type: trans}
   - ''
   - ''
   - ''
@@ -133,7 +133,7 @@ layers:
   - ''
   - '&msc SCRL_DOWN'
   - ''
-  - ''
+  - {t: ▽, type: trans}
   - MUTE
   - MUTE
   - ''
@@ -184,7 +184,7 @@ layers:
   - Gui+C
   - Gui+V
   - ''
-  - ''
+  - {t: ▽, type: trans}
   - MUTE
   - MUTE
   - ''
@@ -235,7 +235,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - {t: ▽, type: trans}
   - MUTE
   - MUTE
   - ''

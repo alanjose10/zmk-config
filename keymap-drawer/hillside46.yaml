@@ -125,7 +125,7 @@ layers:
   - (
   - )
   - ''
-  - ''
+  - {t: ▽, type: trans}
   - ''
   - ''
   - '4'
@@ -172,7 +172,7 @@ layers:
   - ''
   - '&msc SCRL_DOWN'
   - ''
-  - ''
+  - {t: ▽, type: trans}
   - ''
   - HOME
   - PG DN
@@ -219,7 +219,7 @@ layers:
   - ''
   - '&msc SCRL_DOWN'
   - ''
-  - ''
+  - {t: ▽, type: trans}
   - ''
   - HOME
   - PG DN
@@ -266,7 +266,7 @@ layers:
   - Gui+C
   - Gui+V
   - ''
-  - ''
+  - {t: ▽, type: trans}
   - ''
   - ''
   - ''
@@ -313,7 +313,7 @@ layers:
   - Ctl+C
   - Ctl+V
   - ''
-  - ''
+  - {t: ▽, type: trans}
   - ''
   - ''
   - ''
