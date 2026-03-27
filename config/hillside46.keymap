@@ -46,10 +46,9 @@ ZMK_CONDITIONAL_LAYER(system_layer_linux, SYMBOL_L NAV_LNX_L, SYSTEM_L)
         thumb_mt: mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "hold-preferred";
             tapping-term-ms = <220>;
             quick-tap-ms = <190>;
-            require-prior-idle-ms = <150>;
             bindings = <&kp>, <&kp>;
             display-name = "Thumb-Mod-Tap";
         };
