@@ -12,7 +12,7 @@ layers:
   - U
   - Y
   - ;
-  - ''
+  - '&caps_word'
   - LSHIFT
   - A
   - {t: R, h: LCTRL}
@@ -59,7 +59,7 @@ layers:
   - U
   - Y
   - ;
-  - ''
+  - '&caps_word'
   - LSHIFT
   - A
   - {t: R, h: LCTRL}
