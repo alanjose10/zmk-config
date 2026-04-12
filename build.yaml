@@ -1,3 +1,6 @@
+# Build matrix for GitHub Actions CI (builds all keyboards on push/PR).
+# For local builds, see local-build/build_setup.sh which defines
+# per-keyboard build entries independently.
 include:
   # - board: nice_nano_v2
   #   shield: tester_pro_micro
