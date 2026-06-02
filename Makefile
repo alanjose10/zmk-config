@@ -1,10 +1,13 @@
-.PHONY: hillside kyria shell clean help
+.PHONY: hillside-mac hillside-linux kyria shell clean help
 
 help: ## Show this help
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "  \033[36m%-10s\033[0m %s\n", $$1, $$2}'
 
-hillside: ## Build hillside firmware
-	cd local-build && docker compose run --rm -e KEYBOARD=hillside builder
+hillside-mac: ## Build hillside Mac firmware
+	cd local-build && docker compose run --rm -e KEYBOARD=hillside-mac builder
+
+hillside-linux: ## Build hillside Linux firmware
+	cd local-build && docker compose run --rm -e KEYBOARD=hillside-linux builder
 
 kyria: ## Build kyria firmware
 	cd local-build && docker compose run --rm -e KEYBOARD=kyria builder

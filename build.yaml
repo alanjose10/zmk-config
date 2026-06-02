@@ -5,19 +5,29 @@ include:
   # - board: nice_nano_v2
   #   shield: tester_pro_micro
 
-  # Hillside
+  # Hillside - Mac
   - board: nice_nano_v2
     shield: settings_reset
   - board: seeeduino_xiao_ble
     shield: settings_reset
   - board: nice_nano_v2
-    shield: hillside46_right
+    shield: hillside46mac_right
   - board: nice_nano_v2
-    shield: hillside46_left
+    shield: hillside46mac_left
   - board: seeeduino_xiao_ble
-    shield: hillside46_dongle dongle_screen
+    shield: hillside46mac_dongle dongle_screen
   - board: nice_nano_v2
-    shield: hillside46_dongle
+    shield: hillside46mac_dongle
+
+  # Hillside - Linux
+  - board: nice_nano_v2
+    shield: hillside46linux_right
+  - board: nice_nano_v2
+    shield: hillside46linux_left
+  - board: seeeduino_xiao_ble
+    shield: hillside46linux_dongle dongle_screen
+  - board: nice_nano_v2
+    shield: hillside46linux_dongle
 
   # Kyria
   - board: nice_nano_v2

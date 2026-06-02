@@ -73,14 +73,25 @@ KEYBOARD="${KEYBOARD:?Usage: specify KEYBOARD via make target (e.g. make hillsid
 # Multiple shields can be space-separated (e.g. "hillside46_dongle dongle_screen").
 # cmake_args are appended to the west build command for that entry.
 
-setup_hillside() {
+setup_hillside_mac() {
     BUILDS=(
         "nice_nano_v2|settings_reset"
         "seeeduino_xiao_ble|settings_reset"
-        "nice_nano_v2|hillside46_right"
-        "nice_nano_v2|hillside46_left"
-        "seeeduino_xiao_ble|hillside46_dongle dongle_screen"
-        "nice_nano_v2|hillside46_dongle"
+        "nice_nano_v2|hillside46mac_right"
+        "nice_nano_v2|hillside46mac_left"
+        "seeeduino_xiao_ble|hillside46mac_dongle dongle_screen"
+        "nice_nano_v2|hillside46mac_dongle"
+    )
+}
+
+setup_hillside_linux() {
+    BUILDS=(
+        "nice_nano_v2|settings_reset"
+        "seeeduino_xiao_ble|settings_reset"
+        "nice_nano_v2|hillside46linux_right"
+        "nice_nano_v2|hillside46linux_left"
+        "seeeduino_xiao_ble|hillside46linux_dongle dongle_screen"
+        "nice_nano_v2|hillside46linux_dongle"
     )
 }
 
@@ -207,9 +218,10 @@ echo ""
 echo "=== BUILDING KEYBOARD: ${KEYBOARD} ==="
 
 case "$KEYBOARD" in
-    hillside) setup_hillside ;;
-    kyria)    setup_kyria ;;
-    *)        echo "Unknown keyboard: $KEYBOARD"; exit 1 ;;
+    hillside-mac)   setup_hillside_mac ;;
+    hillside-linux) setup_hillside_linux ;;
+    kyria)          setup_kyria ;;
+    *)              echo "Unknown keyboard: $KEYBOARD"; exit 1 ;;
 esac
 
 rm -rf "$OUTPUT_DIR"/*
