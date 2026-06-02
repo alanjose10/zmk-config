@@ -75,32 +75,32 @@ KEYBOARD="${KEYBOARD:?Usage: specify KEYBOARD via make target (e.g. make hillsid
 
 setup_hillside_mac() {
     BUILDS=(
-        "nice_nano_v2|settings_reset"
-        "seeeduino_xiao_ble|settings_reset"
-        "nice_nano_v2|hillside46mac_right"
-        "nice_nano_v2|hillside46mac_left"
-        "seeeduino_xiao_ble|hillside46mac_dongle dongle_screen"
-        "nice_nano_v2|hillside46mac_dongle"
+        "nice_nano//zmk|settings_reset"
+        "xiao_ble//zmk|settings_reset"
+        "nice_nano//zmk|hillside46mac_right"
+        "nice_nano//zmk|hillside46mac_left"
+        "xiao_ble//zmk|hillside46mac_dongle prospector_adapter"
+        "nice_nano//zmk|hillside46mac_dongle"
     )
 }
 
 setup_hillside_linux() {
     BUILDS=(
-        "nice_nano_v2|settings_reset"
-        "seeeduino_xiao_ble|settings_reset"
-        "nice_nano_v2|hillside46linux_right"
-        "nice_nano_v2|hillside46linux_left"
-        "seeeduino_xiao_ble|hillside46linux_dongle dongle_screen"
-        "nice_nano_v2|hillside46linux_dongle"
+        "nice_nano//zmk|settings_reset"
+        "xiao_ble//zmk|settings_reset"
+        "nice_nano//zmk|hillside46linux_right"
+        "nice_nano//zmk|hillside46linux_left"
+        "xiao_ble//zmk|hillside46linux_dongle prospector_adapter"
+        "nice_nano//zmk|hillside46linux_dongle"
     )
 }
 
 setup_kyria() {
     BUILDS=(
-        "nice_nano_v2|settings_reset"
-        "nice_nano_v2|kyria_rev3_left"
-        "nice_nano_v2|kyria_rev3_right"
-        "seeeduino_xiao_ble|kyria_rev3_dongle"
+        "nice_nano//zmk|settings_reset"
+        "nice_nano//zmk|kyria_rev3_left"
+        "nice_nano//zmk|kyria_rev3_right"
+        "xiao_ble//zmk|kyria_rev3_dongle"
     )
 }
 
@@ -151,7 +151,7 @@ setup_workspace() {
 # build_firmware: Compile firmware for one board+shield combo.
 #
 # Args:
-#   $1 - board   (e.g. "nice_nano_v2")
+#   $1 - board   (e.g. "nice_nano//zmk")
 #   $2 - shield  (e.g. "hillside46_left" or "hillside46_dongle dongle_screen")
 #   $3 - cmake_args (optional, extra cmake flags)
 #
@@ -162,9 +162,9 @@ build_firmware() {
     local shield="$2"
     local cmake_args="${3:-}"
 
-    # Artifact name: spaces in shield names become underscores
+    # Artifact name: spaces become underscores, slashes (from board//variant) become underscores
     local artifact_name
-    artifact_name="$(echo "${shield}" | tr ' ' '_')-${board}"
+    artifact_name="$(echo "${shield}" | tr ' ' '_')-$(echo "${board}" | tr '/' '_')"
 
     local build_dir="$WORK_DIR/build/${artifact_name}"
 

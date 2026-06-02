@@ -2,37 +2,37 @@
 # For local builds, see local-build/build_setup.sh which defines
 # per-keyboard build entries independently.
 include:
-  # - board: nice_nano_v2
+  # - board: nice_nano//zmk
   #   shield: tester_pro_micro
 
   # Hillside - Mac
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: settings_reset
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble//zmk
     shield: settings_reset
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: hillside46mac_right
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: hillside46mac_left
-  - board: seeeduino_xiao_ble
-    shield: hillside46mac_dongle dongle_screen
-  - board: nice_nano_v2
+  - board: xiao_ble//zmk
+    shield: hillside46mac_dongle prospector_adapter
+  - board: nice_nano//zmk
     shield: hillside46mac_dongle
 
   # Hillside - Linux
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: hillside46linux_right
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: hillside46linux_left
-  - board: seeeduino_xiao_ble
-    shield: hillside46linux_dongle dongle_screen
-  - board: nice_nano_v2
+  - board: xiao_ble//zmk
+    shield: hillside46linux_dongle prospector_adapter
+  - board: nice_nano//zmk
     shield: hillside46linux_dongle
 
   # Kyria
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: kyria_rev3_left
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: kyria_rev3_right
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble//zmk
     shield: kyria_rev3_dongle
