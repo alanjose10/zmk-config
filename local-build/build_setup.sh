@@ -75,24 +75,24 @@ KEYBOARD="${KEYBOARD:?Usage: specify KEYBOARD via make target (e.g. make hillsid
 
 setup_hillside() {
     BUILDS=(
-        "nice_nano_v2|settings_reset"
-        "seeeduino_xiao_ble|settings_reset"
-        "nice_nano_v2|hillside46_right"
-        "nice_nano_v2|hillside46_left"
-        "seeeduino_xiao_ble|hillside46_dongle dongle_screen"
-        "nice_nano_v2|hillside46_dongle"
-        # makerdiary nRF52840 MDK USB Dongle (boards/arm/nrf52840_mdk_dongle)
-        "nrf52840_mdk_dongle|settings_reset"
-        "nrf52840_mdk_dongle|hillside46_dongle"
+        "nice_nano//zmk|settings_reset"
+        "xiao_ble//zmk|settings_reset"
+        "nice_nano//zmk|hillside46_right"
+        "nice_nano//zmk|hillside46_left"
+        "xiao_ble//zmk|hillside46_dongle dongle_screen"
+        "nice_nano//zmk|hillside46_dongle"
+        # makerdiary nRF52840 MDK USB Dongle (boards/makerdiary/nrf52840_mdk_usb_dongle)
+        "nrf52840_mdk_usb_dongle//zmk|settings_reset"
+        "nrf52840_mdk_usb_dongle//zmk|hillside46_dongle"
     )
 }
 
 setup_kyria() {
     BUILDS=(
-        "nice_nano_v2|settings_reset"
-        "nice_nano_v2|kyria_rev3_left"
-        "nice_nano_v2|kyria_rev3_right"
-        "seeeduino_xiao_ble|kyria_rev3_dongle"
+        "nice_nano//zmk|settings_reset"
+        "nice_nano//zmk|kyria_rev3_left"
+        "nice_nano//zmk|kyria_rev3_right"
+        "xiao_ble//zmk|kyria_rev3_dongle"
     )
 }
 
@@ -143,7 +143,7 @@ setup_workspace() {
 # build_firmware: Compile firmware for one board+shield combo.
 #
 # Args:
-#   $1 - board   (e.g. "nice_nano_v2")
+#   $1 - board   (e.g. "nice_nano//zmk")
 #   $2 - shield  (e.g. "hillside46_left" or "hillside46_dongle dongle_screen")
 #   $3 - cmake_args (optional, extra cmake flags)
 #
@@ -154,9 +154,10 @@ build_firmware() {
     local shield="$2"
     local cmake_args="${3:-}"
 
-    # Artifact name: spaces in shield names become underscores
+    # Artifact name: spaces in shield names become underscores, and the
+    # "//zmk" board variant suffix becomes "__zmk" so it is a legal file name.
     local artifact_name
-    artifact_name="$(echo "${shield}" | tr ' ' '_')-${board}"
+    artifact_name="$(echo "${shield}" | tr ' ' '_')-$(echo "${board}" | sed 's#/#_#g')"
 
     local build_dir="$WORK_DIR/build/${artifact_name}"
 

@@ -1,22 +1,16 @@
 # SPDX-License-Identifier: MIT
 
-CONFIG_SOC_SERIES_NRF52X=y
-CONFIG_SOC_NRF52840_QIAA=y
-CONFIG_BOARD_NRF52840_MDK_DONGLE=y
-
 # Enable MPU
 CONFIG_ARM_MPU=y
-
-# Enable hardware stack protection
-CONFIG_HW_STACK_PROTECTION=y
-
-# enable GPIO
-CONFIG_GPIO=y
 
 # Use pinctrl
 CONFIG_PINCTRL=y
 
-# Link into the code partition declared in the .dts (0x1000, right after the MBR).
+# enable GPIO
+CONFIG_GPIO=y
+
+# Link into the code partition declared in the .dts (0x1000, after the MBR),
+# not the upstream FLASH_LOAD_OFFSET fallback.
 CONFIG_USE_DT_CODE_PARTITION=y
 CONFIG_BUILD_OUTPUT_UF2=y
 
@@ -27,5 +21,8 @@ CONFIG_FLASH=y
 CONFIG_FLASH_PAGE_LAYOUT=y
 CONFIG_FLASH_MAP=y
 
-CONFIG_ZMK_USB=y
+# Upstream board defaults the console to a CDC ACM UART; keep USB to HID (+ Studio).
+CONFIG_BOARD_SERIAL_BACKEND_CDC_ACM=n
+
 CONFIG_ZMK_BLE=y
+CONFIG_ZMK_USB=y

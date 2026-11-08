@@ -21,8 +21,8 @@ Firmware files appear in `firmwares/` at the repo root.
 
 ### makerdiary nRF52840 MDK USB Dongle
 
-`make hillside` also builds `hillside46_dongle-nrf52840_mdk_dongle.uf2` and
-`settings_reset-nrf52840_mdk_dongle.uf2` for the
+`make hillside` also builds `hillside46_dongle-nrf52840_mdk_usb_dongle__zmk.uf2` and
+`settings_reset-nrf52840_mdk_usb_dongle__zmk.uf2` for the
 [makerdiary nRF52840 MDK USB Dongle](https://wiki.makerdiary.com/nrf52840-mdk-usb-dongle/).
 To flash: with the dongle plugged in, double-press its button within half a second. The LED
 turns green and a `UF2BOOT` drive mounts. Copy the uf2 onto it. Holding the button while

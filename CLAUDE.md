@@ -14,20 +14,24 @@ For local development with West (ZMK's build system):
 ```bash
 west init -l config
 west update
-west build -d build/output -b nice_nano_v2 -- -DSHIELD=hillside46_left config
+west build -d build/output -b nice_nano//zmk -- -DSHIELD=hillside46_left config
 ```
 
 ## Build Configuration
 
 `build.yaml` defines the build matrix of board+shield combinations:
-- Boards: nice_nano_v2, seeeduino_xiao_ble, nrf52840_mdk_dongle
+- Boards: `nice_nano//zmk`, `xiao_ble//zmk`, `nrf52840_mdk_usb_dongle//zmk`
 - Shields: hillside46_left, hillside46_right, hillside46_dongle, settings_reset
 
-`nrf52840_mdk_dongle` is an in-repo board (`boards/arm/nrf52840_mdk_dongle/`) for the
-makerdiary nRF52840 MDK USB Dongle. It declares the stock UF2 bootloader's flash layout
-(app at 0x1000, NVS storage at 0xEC000). ZMK v0.3 is on Zephyr 3.5, so it is a full
-board definition, not a `//zmk` variant of the upstream Zephyr board. To flash: double-press
-the dongle button while it is plugged in, then copy the uf2 onto the `UF2BOOT` drive.
+ZMK tracks `main` (Zephyr 4.1, hardware model v2), same as the charybdis repo. Board IDs
+carry the `//zmk` variant suffix; shield board overlays use the full board string, e.g.
+`boards/nice_nano_nrf52840_zmk.overlay`.
+
+`nrf52840_mdk_usb_dongle//zmk` (`boards/makerdiary/nrf52840_mdk_usb_dongle/`) is the
+makerdiary nRF52840 MDK USB Dongle, a `zmk` variant of the upstream Zephyr board with the
+stock UF2 bootloader's flash layout (app at 0x1000, NVS storage at 0xEC000). It is a copy
+of the same board in the charybdis repo. To flash: double-press the dongle button while it
+is plugged in, then copy the uf2 onto the `UF2BOOT` drive.
 
 ## Architecture
 
@@ -57,9 +61,9 @@ Keymaps use Colemak-DH layout with home row mods and multiple layers:
 ### Dependencies
 
 `config/west.yml` specifies ZMK modules:
-- `zmkfirmware/zmk` - Core ZMK firmware (v0.3)
+- `zmkfirmware/zmk` - Core ZMK firmware (`main`)
 - `urob/zmk-helpers` - Helper macros and key labels
-- `janpfischer/zmk-dongle-screen` - Display support for dongle
+- `janpfischer/zmk-dongle-screen` - Display support for dongle, on its `upgrade-4.1` branch (its `main` only builds against ZMK v0.3)
 
 ### Shield Definitions
 
