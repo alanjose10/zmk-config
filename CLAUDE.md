@@ -37,13 +37,27 @@ is plugged in, then copy the uf2 onto the `UF2BOOT` drive.
 
 ### Keymap Structure
 
-Keymaps use Colemak-DH layout with home row mods and multiple layers:
-- MAC_L / LNX_L: Base layers with OS-specific shortcuts
-- SYMBOL_L: Symbols and numbers
-- NAV layers: Navigation (arrow keys, page up/down)
-- SHORTCUTS layers: OS-specific shortcuts
-- ADJ_L: Adjustment layer (activated via conditional layers)
-- SYSTEM_L: System controls (Bluetooth, reset)
+`config/hillside46.keymap` is the Mac-only Colemak-DH design shared with the charybdis
+repo (`config/keymaps/colemak_dh.keymap` there). Layers, in the same order as charybdis:
+
+| # | Name | Access | Purpose |
+|---|------|--------|---------|
+| 0 | BASE | — | Colemak-DH, home row mods, caffeine toggle on key 37 |
+| 1 | NAV | hold ENTER (key 42) | Mouse move/scroll on the left; desktop prev/next, left/right click, arrows, Home/PgDn/PgUp/End on the right |
+| 2 | SYM | hold TAB (key 39) or DEL (key 44) | Symbols left, numbers right |
+| 3 | SHORTCUTS | hold ESC (key 41) | Prev/next tab, back, forward, select all, save, find, undo, cut, copy, paste |
+| 4 | ADJ | SHORTCUTS + NAV | Brightness, volume, F23/F24 |
+| 5 | SYSTEM | SYM + NAV | BT profiles, BT_CLR (key 23), outputs, ext power, bootloader on both bottom outer keys |
+
+The hillside has five keys the charybdis lacks (30, 31, 38, 44, 45). They keep their own
+bindings: ENTER, CAPS, BSPC, SYM/DEL, none. SYSTEM also keeps BT_CLR_ALL on key 31.
+
+Deliberate difference from charybdis: clicks live in NAV with the mouse keys and
+Back/Forward in SHORTCUTS, because the hillside has no trackball.
+
+Combos (`hillside-combos.dtsi`): twelve vertical symbol combos on BASE with 20 ms windows
+for choc switches, caps word on G+M, ESC on Q+W and Y+;, soft reset on the two top
+outer keys, bootloader on the two home outer keys on SYSTEM.
 
 ### Configuration Files
 
@@ -51,11 +65,10 @@ Keymaps use Colemak-DH layout with home row mods and multiple layers:
 - `*.keymap` - Layer definitions and key bindings
 - `*.conf` - Kconfig feature flags
 - `*.dtsi` - Shared device tree includes:
-  - `hillside-common.dtsi` - Common behaviors
-  - `hillside-ht.dtsi` - Home row mod hold-tap definitions
+  - `hillside-common.dtsi` - Key position diagram (labels come from zmk-helpers)
+  - `hillside-ht.dtsi` - Home row mod hold-tap definitions (same timings as charybdis)
   - `hillside-combos.dtsi` - Key combos
-  - `shortcuts.dtsi` - OS-specific modifier definitions (LG for Mac GUI, LC for Linux Ctrl)
-  - `macros.dtsi` - Custom macros
+  - `shortcuts.dtsi` - Mac shortcut defines
   - `mouse.dtsi` - Mouse movement configuration
 
 ### Dependencies
@@ -64,6 +77,7 @@ Keymaps use Colemak-DH layout with home row mods and multiple layers:
 - `zmkfirmware/zmk` - Core ZMK firmware (`main`)
 - `urob/zmk-helpers` - Helper macros and key labels
 - `janpfischer/zmk-dongle-screen` - Display support for dongle, on its `upgrade-4.1` branch (its `main` only builds against ZMK v0.3)
+- `alanjose10/zmk-caffeine` - shared with the charybdis repo, pinned by tag; bump both configs together
 
 ### Shield Definitions
 
@@ -75,7 +89,8 @@ The `draw-keymaps.yml` workflow auto-generates SVG diagrams using keymap-drawer 
 
 ## Key Patterns
 
-- Conditional layers activate ADJ_L and SYSTEM_L when specific layer combinations are held
-- Home row mods use `hml`/`hmr` (hold-tap behaviors) for modifier keys on home row
-- `thumb_mt` provides hold-preferred mod-tap for thumb keys
-- OS layers (MAC/LNX) have parallel structure with different modifier mappings
+- Conditional layers activate ADJ (SHORTCUTS + NAV) and SYSTEM (SYM + NAV)
+- Home row mods use `hml`/`hmr` (balanced hold-taps, 280 ms, hold-trigger-on-release); the
+  THUMBS list from zmk-helpers includes the inner bottom keys 30/31
+- `thumb_mt` provides hold-preferred mod-tap for thumb keys; `&lt` is tuned to 220/190 ms
+- `&ca` (caffeine) comes from the shared zmk-caffeine module

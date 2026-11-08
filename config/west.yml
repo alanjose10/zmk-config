@@ -8,6 +8,8 @@ manifest:
     #   url-base: https://github.com/carrefinho
     - name: janpfischer
       url-base: https://github.com/janpfischer
+    - name: alanjose10
+      url-base: https://github.com/alanjose10
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -25,5 +27,9 @@ manifest:
       # main targets ZMK v0.3 / LVGL 8 and breaks every build's Kconfig on ZMK main.
       # upgrade-4.1 is the maintainer's Zephyr 4.1 branch (see upstream issue 29).
       revision: upgrade-4.1
+    # Shared with the charybdis config. Bump the tag in both configs together.
+    - name: zmk-caffeine
+      remote: alanjose10
+      revision: v0.1.0
   self:
     path: config

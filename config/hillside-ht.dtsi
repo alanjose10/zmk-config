@@ -1,3 +1,5 @@
+/* Home row mods, same timings as the charybdis ht_left / ht_right. */
+
 /* Left-hand HRMs. */
 ZMK_HOLD_TAP(hml,
     flavor = "balanced";
@@ -14,7 +16,7 @@ ZMK_HOLD_TAP(hmr,
     flavor = "balanced";
     tapping-term-ms = <280>;
     quick-tap-ms = <175>;
-    require-prior-idle-ms = <150>;
+    require-prior-idle-ms = <125>;
     bindings = <&kp>, <&kp>;
     hold-trigger-key-positions = <KEYS_L THUMBS>;
     hold-trigger-on-release;

@@ -1,65 +1,36 @@
+/* Combos. Symbol combos are vertical same-column pairs on BASE, same layout
+   as the charybdis keymap; the 20 ms window suits choc switches. */
+
 #define COMBO_TERM_FAST 20
 #define COMBO_TERM_SLOW 30
 
 #define COMBO_IDLE_FAST 150
 #define COMBO_IDLE_SLOW 50
 
-// Define mod-morph with a *single* mod trigger for less repetition.
-#define SIMPLE_MORPH(NAME, MOD, BINDING1, BINDING2)                            \
-  ZMK_MOD_MORPH(NAME, mods = <(MOD_L##MOD | MOD_R##MOD)>;                      \
-                bindings = <BINDING1>, <BINDING2>;)
-
-// CHORDS
-
 // LEFT SIDE
-
-// Chord for -
-ZMK_COMBO(ch_minus, &kp MINUS, LT1 LM1, MAC_L LNX_L, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-
-// Chord for +
-ZMK_COMBO(ch_plus, &kp PLUS, LT2 LM2, MAC_L LNX_L, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-
-// Chord for =
-ZMK_COMBO(ch_equal, &kp EQUAL, LM1 LB1, MAC_L LNX_L, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-
-// Chord for !
-ZMK_COMBO(ch_excl, &kp EXCL, LM2 LB2, MAC_L LNX_L, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-
-// Chord for `
-ZMK_COMBO(ch_grave, &kp GRAVE, LM3 LB3, MAC_L LNX_L, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-
-// Chord for ~
-ZMK_COMBO(ch_tilde, &kp TILDE, LT3 LM3, MAC_L LNX_L, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-
+ZMK_COMBO(ch_minus, &kp MINUS, LT1 LM1, BASE, COMBO_TERM_FAST, COMBO_IDLE_FAST) // P+T
+ZMK_COMBO(ch_plus,  &kp PLUS,  LT2 LM2, BASE, COMBO_TERM_FAST, COMBO_IDLE_FAST) // F+S
+ZMK_COMBO(ch_equal, &kp EQUAL, LM1 LB1, BASE, COMBO_TERM_FAST, COMBO_IDLE_FAST) // T+D
+ZMK_COMBO(ch_excl,  &kp EXCL,  LM2 LB2, BASE, COMBO_TERM_FAST, COMBO_IDLE_FAST) // S+C
+ZMK_COMBO(ch_grave, &kp GRAVE, LM3 LB3, BASE, COMBO_TERM_FAST, COMBO_IDLE_FAST) // R+X
+ZMK_COMBO(ch_tilde, &kp TILDE, LT3 LM3, BASE, COMBO_TERM_FAST, COMBO_IDLE_FAST) // W+R
 
 // RIGHT SIDE
+ZMK_COMBO(ch_sqt,   &kp SQT,   RT1 RM1, BASE, COMBO_TERM_FAST, COMBO_IDLE_FAST) // L+N
+ZMK_COMBO(ch_dqt,   &kp DQT,   RT2 RM2, BASE, COMBO_TERM_FAST, COMBO_IDLE_FAST) // U+E
+ZMK_COMBO(ch_under, &kp UNDER, RM1 RB1, BASE, COMBO_TERM_FAST, COMBO_IDLE_FAST) // N+H
+ZMK_COMBO(ch_prcnt, &kp PRCNT, RM2 RB2, BASE, COMBO_TERM_FAST, COMBO_IDLE_FAST) // E+,
+ZMK_COMBO(ch_astrk, &kp ASTRK, RT3 RM3, BASE, COMBO_TERM_FAST, COMBO_IDLE_FAST) // Y+I
+ZMK_COMBO(ch_amps,  &kp AMPS,  RM3 RB3, BASE, COMBO_TERM_FAST, COMBO_IDLE_FAST) // I+.
 
-// Chord for '
-ZMK_COMBO(ch_sqt, &kp SQT, RT1 RM1, MAC_L LNX_L, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-
-// Chord for "
-ZMK_COMBO(ch_dqt, &kp DQT, RT2 RM2, MAC_L LNX_L, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-
-// Chord for _
-ZMK_COMBO(ch_under, &kp UNDER, RM1 RB1, MAC_L LNX_L, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-
-// Chord for %
-ZMK_COMBO(ch_prcnt, &kp PRCNT, 20 34, MAC_L LNX_L, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-
-// Chord for *
-ZMK_COMBO(ch_astrk, &kp ASTRK, RT3 RM3, MAC_L LNX_L, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-
-// Chord for &
-ZMK_COMBO(ch_amps, &kp AMPS, RM3 RB3, MAC_L LNX_L, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+// HORIZONTAL PAIRS
+ZMK_COMBO(ch_caps_word, &caps_word, LM0 RM0, BASE, COMBO_TERM_SLOW) // G+M
+ZMK_COMBO(ch_esc_left,  &kp ESC,    LT4 LT3, BASE, COMBO_TERM_SLOW) // Q+W
+ZMK_COMBO(ch_esc_right, &kp ESC,    RT3 RT4, BASE, COMBO_TERM_SLOW) // Y+;
 
 // BOTH SIDES
-
-// Toggle Mac/Linux base
-ZMK_COMBO(ch_toggle_os_to_linux, &to LNX_L, LH2 RH2, MAC_L, COMBO_TERM_SLOW)
-ZMK_COMBO(ch_toggle_os_to_mac, &to MAC_L, LH2 RH2, LNX_L, COMBO_TERM_SLOW)
-
 // Soft reboot to clear any transient stuck state
-ZMK_COMBO(ch_soft_reset, &sys_reset, LT5 RT5, MAC_L LNX_L SYMBOL_L NAV_MAC_L NAV_LNX_L, COMBO_TERM_SLOW)
+ZMK_COMBO(ch_soft_reset, &sys_reset, LT5 RT5, BASE SYM NAV, COMBO_TERM_SLOW)
 
-// Dongle bootloader 
-ZMK_COMBO(ch_dongle_bootloader, &bootloader, LM5 RM5, SYSTEM_L, COMBO_TERM_SLOW)
+// Bootloader, same keys as the charybdis SYSTEM-layer combo.
+ZMK_COMBO(ch_bootloader, &bootloader, LM5 RM5, SYSTEM, COMBO_TERM_SLOW)
