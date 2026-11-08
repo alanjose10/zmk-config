@@ -20,8 +20,14 @@ west build -d build/output -b nice_nano_v2 -- -DSHIELD=hillside46_left config
 ## Build Configuration
 
 `build.yaml` defines the build matrix of board+shield combinations:
-- Boards: nice_nano_v2, seeeduino_xiao_ble
+- Boards: nice_nano_v2, seeeduino_xiao_ble, nrf52840_mdk_dongle
 - Shields: hillside46_left, hillside46_right, hillside46_dongle, settings_reset
+
+`nrf52840_mdk_dongle` is an in-repo board (`boards/arm/nrf52840_mdk_dongle/`) for the
+makerdiary nRF52840 MDK USB Dongle. It declares the stock UF2 bootloader's flash layout
+(app at 0x1000, NVS storage at 0xEC000). ZMK v0.3 is on Zephyr 3.5, so it is a full
+board definition, not a `//zmk` variant of the upstream Zephyr board. To flash: double-press
+the dongle button while it is plugged in, then copy the uf2 onto the `UF2BOOT` drive.
 
 ## Architecture
 

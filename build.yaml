@@ -18,6 +18,11 @@ include:
     shield: hillside46_dongle dongle_screen
   - board: nice_nano_v2
     shield: hillside46_dongle
+  # makerdiary nRF52840 MDK USB Dongle (boards/arm/nrf52840_mdk_dongle)
+  - board: nrf52840_mdk_dongle
+    shield: settings_reset
+  - board: nrf52840_mdk_dongle
+    shield: hillside46_dongle
 
   # Kyria
   - board: nice_nano_v2

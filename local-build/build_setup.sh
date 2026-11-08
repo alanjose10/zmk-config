@@ -81,6 +81,9 @@ setup_hillside() {
         "nice_nano_v2|hillside46_left"
         "seeeduino_xiao_ble|hillside46_dongle dongle_screen"
         "nice_nano_v2|hillside46_dongle"
+        # makerdiary nRF52840 MDK USB Dongle (boards/arm/nrf52840_mdk_dongle)
+        "nrf52840_mdk_dongle|settings_reset"
+        "nrf52840_mdk_dongle|hillside46_dongle"
     )
 }
 
